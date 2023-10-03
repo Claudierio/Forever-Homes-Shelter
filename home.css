@@ -1,0 +1,86 @@
+/* Estilize a barra de navegação */
+.navbar {
+    width: 1208px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+
+/* Estilize a lista de itens de navegação */
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilize cada item de navegação */
+.navbar-item {
+    font-family: "Poppins", sans-serif; /* Use a fonte Poppins */
+
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilize o logo */
+.navbar-item.logo img {
+    height: 32px; /* Defina a altura desejada para o logo */
+    margin-right: 10px; /* Adicione um espaço à direita do logo */
+}
+
+/* Estilize o número de telefone */
+.navbar-item.phone img {
+    height: 24px; /* Defina a altura desejada para o ícone de telefone */
+    margin-right: 10px; /* Adicione um espaço à direita do ícone de telefone */
+}
+
+.navbar-item.phone {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adicione um espaçamento à direita */
+}
+
+/* Estilize os links */
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilize os links quando passar o mouse sobre eles */
+.navbar-item a:hover {
+    text-decoration: underline;
+}
+
+/* Estilize o botão "Donate" */
+.navbar-item.donate button {
+    background-color: #FF3D9A; /* Cor de fundo rosa */
+    border: none;
+    width: fit-content; /* Define a largura de acordo com o conteúdo */
+    height: 64px; /* Altura fixa */
+    padding: 16px 32px; /* Espaçamento interno */
+    border-radius: 32px; /* Arredonda as bordas */
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    cursor: pointer;
+}
+
+/* Estilize o ícone de coração dentro do botão */
+.navbar-item.donate img {
+    width: 25.81px;
+    height: 23.14px; /* Defina a altura desejada para o ícone de coração */
+    top: 5.07;
+    left: 3.09;
+    margin-right: 10px; /* Adicione um espaço à direita do ícone */
+}
+
+/* Estilize o botão quando passar o mouse sobre ele */
+.navbar-item.donate button {
+    background-color: #FF3D9A  /* Altera a cor de fundo no hover */
+}
