@@ -1,1 +1,1 @@
-1º desafio referente a trilha da 4ª semana da compass UOL
+1º desafio referente a trilha da 4ª semana da capacitação da Compass UOL.
