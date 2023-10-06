@@ -1,0 +1,131 @@
+.adoptables{
+    background-color: #1e1f27;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.Adoptables_Main{
+    width: Fixed (1,208px);
+    height: 1,129px;
+    gap: 80px;
+}
+
+.Text_Information{
+    width: Fixed (1,208px);
+    height: 211px;
+    gap: 80px;
+}
+
+.Text_Information h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center; /* Centralize horizontalmente */
+}
+
+.Buttons button {
+    width: 170px;
+    height: 64px;
+    padding: 24px 32px 24px 34px;
+    border-radius: 32px;
+    gap: 8px;
+    color: white;
+    background: #37383F;
+    border: 2px solid transparent;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+}
+
+.Buttons img {
+    width: 12px;
+    height: 22px;
+    margin-right: 8px; 
+}
+
+.Carousel_line1,
+.Carousel_line2 {
+    width: 1208px; /* Largura fixa */
+    height: auto; /* Altura ajustável ao conteúdo */
+    gap: 60px; /* Espaçamento entre elementos internos */
+    display: flex;
+}
+
+.Carousel_line2 {
+    margin-top: 60px;
+}
+
+
+.Carousel_1,
+.Carousel_2,
+.Carousel_3,
+.Carousel_4 {
+    width: 250px; 
+    height: 389px; 
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img{
+    width: 250px; 
+    height: 250px; 
+}
+
+
+.Carousel_1 p,
+.Carousel_2 p,
+.Carousel_3 p,
+.Carousel_4 p {
+    margin-top: 12px; 
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
+}
+
+.Adopt_Button button {
+    width: 250px;
+    height: 64px;
+    border-radius: 32px;
+    border: 2px solid #FF3D9A;
+    gap: 8px;
+    background: #FF3D9A;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Adopt_Button button img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px; 
+}
