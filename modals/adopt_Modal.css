@@ -1,0 +1,315 @@
+/* Estilos para a div Adopt_Modal */
+.Adopt_Modal {
+    width: 448px;
+    height: 686px;
+    position: fixed;
+    /*top: -4255px;
+    left: 2606px;*/
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #ffffff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    /*z-index: 1000; */
+}
+
+.Title_adopt h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0; 
+}
+
+/* Estilos apenas para o elemento <p> dentro de .SubWrap */
+.SubTitle_adopt p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 4px; 
+}
+
+.Main_form_dopt{
+    width: 384px;
+    height: 488px;
+    gap: 24px;
+}
+
+.main_email_dopt,
+.main_name_dopt p{
+    width: 384px;
+    gap: 8px;
+}
+
+.Form_email_dopt,
+.Form_name_dopt{
+    width: 384px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    gap: 10px;
+    padding-left: 24px; 
+    padding-top: 15px;
+    background-color: transparent; 
+}
+
+#Adopt_Button{
+    width: 384px;
+}
+
+input[type="text"] {
+    border: none; 
+    background: transparent; 
+    flex: 1; 
+    outline: none; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Inter;
+}
+
+.Form_email input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.801);
+    
+}
+
+/* Estilos para o input[type="money"] */
+input[type="money"] {
+    width: 90%;
+    height: 56px;
+    font-size: 16px;
+    padding: 16px;
+    text-align: end;
+    border-radius: 8px;
+    border: 1px solid #3f96fc;
+    margin-bottom: 8px;
+  }
+
+
+/* Estilos para o elemento <p> dentro de .email */
+.main_email_dopt p,
+.main_name_dopt p,
+.Date_of_birth p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF3D9A; 
+}
+
+.blue-text{
+    color: #3F96FC;
+}
+
+/* Estilos para o contêiner .frame */
+.frame {
+    display: flex; /* Torna os elementos filhos flexíveis */
+    gap: 8px; /* Espaçamento entre os elementos */
+}
+
+/* Estilos para os inputs dentro de .frame */
+.frame input[type="text"] {
+    width: 12px;
+    height: 30px;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 0; 
+    outline: none; 
+}
+
+/* Estilos para os botões dentro de .input-with-image */
+.input-with-image .date-button {
+    width: 122.67px; /* Largura especificada */
+    height: 56px; /* Altura especificada */
+    border-radius: 8px;
+    border: 1px solid #3F96FC; /* Cor da borda */
+    margin: 0; 
+    outline: none;
+    position: relative;
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Torna os elementos filhos flexíveis */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 16px; /* Espaçamento interno especificado */
+    gap: 8px; /* Espaçamento entre elementos */
+    cursor: pointer; /* Define o cursor como apontador */
+}
+
+/* Estilos para o texto dentro dos botões */
+.input-with-image .date-button span {
+    flex: 1; /* Ocupa todo o espaço disponível no botão */
+}
+
+/* Estilos para as imagens dentro de .input-with-image */
+.input-with-image img {
+    width: 16px; /* Define a largura desejada para as imagens */
+    height: 16px; /* Define a altura desejada para as imagens */
+    margin-left: 8px; /* Espaçamento à esquerda da imagem */
+}
+.date-selects {
+    display: flex;
+    justify-content: space-between; /* Alinha os selects lado a lado */
+    margin: 0 auto; /* Centralize horizontalmente */
+}
+
+.layout-button-adopt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    margin-bottom: 16px;
+    width: 122.67px; 
+    height: 56px;/* Defina a largura desejada para as opções */
+    position: relative;
+    gap: 8px;
+  
+  }
+
+
+/* Estilos para a div .Terms_Buttons */
+.Terms_Buttons_adopt {
+    width: 384px;
+    display: flex; 
+    align-items: center;
+    gap: 12px;
+}
+
+
+.Terms_adopt {
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    size: 12px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.checkbox-label{
+    margin-right: 15px;
+    align-items: center;
+}
+
+.custom-checkbox{
+    opacity: 0;
+    
+}
+
+.checkbox-span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #37383f;
+    color: #37383F;
+    border-radius: 50%;
+}
+
+.checkbox-span::before{
+    content: "\2713";
+    font-size: 14px;
+    display: block;
+}
+
+.custom-checkbox:checked + .checkbox-span{
+    background-color: #04C27F;
+    color: white;
+}
+
+
+.pink-text{
+    color: #FF3D9A;
+}
+
+/* Estilos para a div .Buttons */
+.Adopt_Modal_Buttons {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Estilos para os botões dentro de .Buttons */
+.Adopt_Modal_Buttons button {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-weight: 700;
+    background: #04C27F; /* Cor de fundo para o botão "I wanna Adopt!" */
+    color: white; /* Cor do texto para o botão "I wanna Adopt!" */
+    position: relative; /* Para posicionar a imagem */
+}
+
+/* Estilos para a imagem dentro dos botões */
+.Adopt_Modal_Buttons img {
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse os limites do botão */
+    max-height: 100%; /* Para garantir que a imagem não ultrapasse os limites do botão */
+    position: absolute; /* Posiciona a imagem absolutamente dentro do botão */
+    top: 75%; /* Ajusta a posição vertical da imagem (por exemplo, 75% para descer um pouco) */
+    left: 50%; /* Move a imagem 50% para a direita */
+    transform: translate(-50%, -50%); /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilos para o botão "I wanna Adopt!" */
+#Adopt_Button {
+    width: 410px;
+    height: 64px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    background: #04C27F; /* Cor de fundo para o botão "I wanna Adopt!" */
+    color: white; /* Cor do texto para o botão "I wanna Adopt!" */
+    position: relative;
+}
+
+/* Estilos para a imagem dentro do botão "I wanna Adopt!" */
+#Adopt_Button img {
+    width: 29.49px;
+    height: 25.5px;
+    top: 50%; /* Ajuste a posição vertical da imagem para centralizar */
+    left: 32%; /* Move a imagem 50% para a direita */
+    transform: translate(-50%, -50%); /* Centraliza a imagem vertical e horizontalmente */
+}
+
+/* Estilos para o botão "Cancel" */
+#Cancel-button_adopt {
+    height: 64px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    background: #37383F; /* Cor de fundo para o botão "Cancel" */
+    color: white; /* Cor do texto para o botão "Cancel" */
+    position: relative;
+}
+
+/* Estilos para a imagem dentro do botão "Cancel" */
+#Cancel-button img {
+    width: 12px;
+    height: 22px;
+    top: 50%; /* Ajuste a posição vertical da imagem para centralizar */
+    left: 40%; /* Move a imagem 50% para a direita */
+    transform: translate(-50%, -50%); /* Centraliza a imagem vertical e horizontalmente */
+}

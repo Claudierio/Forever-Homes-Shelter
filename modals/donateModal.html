@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="donateModal.css">
+</head>
+
+<body>
+    <div class="Donate_Modal">
+        <div class="Title">
+            <h1>Choose your Donate </h1>
+        </div>
+        <div class="form_donate">
+            <div class="email">
+                <p>EMAIL<span class="blue-text">*</span></p>
+                <div class="Form_email">
+                    <input type="text" placeholder="Your email">
+                </div>
+            </div>
+
+            <div class="email">
+                <p>HOW MUCH CAN YOU HELP?*<span class="blue-text">*</span></p>
+                <div class="Form_email">
+                    <input type="text" placeholder="Your email">
+                </div>
+            </div>
+
+            <div class="email">
+                <p class="email">PAYMENT METHOD<span class="blue-text">*</span></p>
+
+                <div class="button-container">
+                  <label class="layout-button">
+                    PIX
+                    <input
+                      type="radio"
+                      class="circular-radio"
+                      name="payment-method"
+                      onclick="toggleStyle(this)"
+                    />
+                  </label>
+                  <label class="second-layout-button">
+                    Credit<br />Card
+                    <input
+                      type="radio"
+                      class="circular-radio"
+                      name="payment-method"
+                      onclick="toggleStyle(this)"
+                    />
+                  </label>
+                  <label class="layout-button">
+                    PayPal
+                    <input
+                      type="radio"
+                      class="circular-radio"
+                      name="payment-method"
+                      onclick="toggleStyle(this)"
+                    />
+                  </label>
+                </div>
+      
+                <div class="donate-wrap-button">
+                  <button class="button-heart-wanna">
+                    <img src="components/heart.png" width="25" height="23" />
+                    I wanna Help!
+                  </button>
+                </div>
+                <div class="donate-wrap-button">
+                  <button class="button-cancel" onclick="closeModal()">
+                    <img
+                      src="components/vector.png"
+                      width="12"
+                      height="22"
+                    />
+                    Cancel
+                  </button>
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
