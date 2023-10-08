@@ -1,3 +1,326 @@
+/*Adoptables*/
+.navbar {
+    width: 1208px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 3px solid black;
+}
+
+
+/* Estilize a lista de itens de navegação */
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+.navbar-item {
+    font-family: "Poppins", sans-serif;
+    font-size: 19.5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-item.logo img {
+    height: 60px;
+    width: 60;
+    margin-right: 20px;
+}
+
+
+.navbar-item.phone img {
+    height: 24px;
+    margin-left: 60px;
+}
+
+.navbar-item.phone {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar-item a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar-item.donate button {
+    background-color: #FF3D9A;
+    border: none;
+    width: fit-content;
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.navbar-item.donate img {
+    width: 25.81px;
+    height: 23.14px;
+    top: 5.07;
+    left: 3.09;
+    margin-right: 10px;
+}
+
+
+.navbar-item.donate button {
+    background-color: #FF3D9A 
+}
+
+/* DONATE_MODAL*/
+.Donate_Modal {
+    width: 448px;
+    height: 686px;
+    position: fixed;
+   
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #ffffff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form_donate {
+    width: 416px;
+    height: auto;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Wrap{
+    width: 384px;
+    height: 86px;
+    gap: 4px;
+}
+
+.Title h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0; 
+}
+
+.Main_form{
+    width: 384px;
+    height: 488px;
+    gap: 24px;
+}
+
+.email p{
+    width: 384px;
+    gap: 8px;
+}
+
+.Form_email,
+.Form_money{
+    width: 384px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    gap: 10px;
+    padding-left: 24px; 
+    padding-top: 15px;
+    background-color: transparent; 
+}
+
+.Form_money{
+    text-align: end;
+}
+
+#Adopt_Button{
+    width: 384px;
+}
+
+input[type="text"] {
+    border: none; 
+    background: transparent; 
+    flex: 1; 
+    outline: none; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Inter;
+}
+
+
+input[type="money"] {
+    border: none; 
+    background: transparent; 
+    flex: 1; 
+    outline: none; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Inter;
+    text-align: end;
+    padding-right: 6%;
+
+}
+
+.Form_email input[type="text"]::placeholder,
+.Form_money input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.801);
+}
+
+
+.email p,
+.Name p,
+.Date_of_birth p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF3D9A; 
+}
+
+.blue-text{
+    color: #3F96FC;
+}
+
+.button-container {
+    width: 416px;
+    height: 80px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-top: 8px;
+  }
+  .donate-wrap-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
+    gap: 8px;
+    width: 416px;
+    height: 80px;
+  }
+
+  .layout-button {
+    width: 133.33px;
+    height: 30px;
+  }
+  
+  .second-layout-button {
+    width: 133.33px;
+    height: 60px;
+  }
+
+  .layout-button,
+.second-layout-button {
+  border-radius: 8px;
+  border: 1px solid var(--blue-light, #3F96FC);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+  .circular-radio {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  .circular-radio:checked::before {
+    content: "\2713";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff3d9a;
+  }
+
+  .button-heart-wanna {
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--pink, #FF3D9A);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .button-heart-wanna img {
+    width: 25px;
+    height: 23px;
+  }
+  
+  .button-cancel {
+    margin-top: -5%;
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--gray-dark, #37383F);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .button-cancel img {
+    width: 12px;
+    height: 22px;
+  }
+
+
+
+
 .adoptables{
     background-color: #1e1f27;
     margin: 0 auto;
@@ -35,7 +358,7 @@
 
 .Buttons {
     display: flex;
-    justify-content: center; /* Centralize horizontalmente */
+    justify-content: center;
 }
 
 .Buttons button {
@@ -66,7 +389,7 @@
 .Carousel_line2 {
     width: 1208px; 
     height: auto; 
-    gap: 60px; /* Espaçamento entre elementos internos */
+    gap: 60px;
     display: flex;
 }
 
@@ -128,4 +451,663 @@
     width: 32px;
     height: 32px;
     margin-right: 8px; 
+}
+
+
+.footer_text_end{
+    width: 100%;
+   
+    display: flex;
+    
+}
+
+.Main_Footer{
+    width: 1208%; 
+    height: 443px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Links_Block {
+    width: 1208px; 
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 3px solid black;
+    margin-top: -20px;
+}
+
+.logo_nav img{
+    width: 272px;
+    height: 272px;
+    gap: 19px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Links_Row_1 p, .Links_Row_2 p {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.contacts {
+    width: 272px;
+    height: 232px;
+    gap: 24px;
+}
+
+.Address,
+.Phone, 
+.Mail{
+    display: flex;
+}
+
+.Info p{
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left; 
+    margin-top: 30px;
+}
+
+.Sub_Address p {
+    line-height: 5px;
+}
+
+.Address img {
+    width: 14px;
+    height: 20px;
+    position: relative;
+    top: 20px;
+    margin-right: 10px;
+}
+
+.Phone img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 36px;
+    margin-right: 10px;
+}
+
+.Mail img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 35px;
+    margin-right: 10px;
+}
+
+.Socials img{
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+}
+
+.Text_end{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+}
+
+.Text_end {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.part1 {
+    color: #1E1F27;
+}
+
+.part2 {
+    color: #FF3D9A;
+}
+
+
+
+.Donate_Modal {
+    width: 448px;
+    height: 686px;
+    position: fixed;
+   
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #ffffff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form_donate {
+    width: 416px;
+    height: auto;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Wrap{
+    width: 384px;
+    height: 86px;
+    gap: 4px;
+}
+
+.Title h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0; 
+}
+
+.Main_form{
+    width: 384px;
+    height: 488px;
+    gap: 24px;
+}
+
+.email p{
+    width: 384px;
+    gap: 8px;
+}
+
+.Form_email,
+.Form_money{
+    width: 384px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    gap: 10px;
+    padding-left: 24px; 
+    padding-top: 15px;
+    background-color: transparent; 
+}
+
+.Form_money{
+    text-align: end;
+}
+
+#Adopt_Button{
+    width: 384px;
+}
+
+input[type="text"] {
+    border: none; 
+    background: transparent; 
+    flex: 1; 
+    outline: none; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Inter;
+}
+
+
+input[type="money"] {
+    border: none; 
+    background: transparent; 
+    flex: 1; 
+    outline: none; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Inter;
+    text-align: end;
+    padding-right: 6%;
+
+}
+
+.Form_email input[type="text"]::placeholder,
+.Form_money input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.801);
+}
+
+
+.email p,
+.Name p,
+.Date_of_birth p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF3D9A; 
+}
+
+.blue-text{
+    color: #3F96FC;
+}
+
+.button-container {
+    width: 416px;
+    height: 80px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-top: 8px;
+  }
+  .donate-wrap-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
+    gap: 8px;
+    width: 416px;
+    height: 80px;
+  }
+
+  .layout-button {
+    width: 133.33px;
+    height: 30px;
+  }
+  
+  .second-layout-button {
+    width: 133.33px;
+    height: 60px;
+  }
+
+  .layout-button,
+.second-layout-button {
+  border-radius: 8px;
+  border: 1px solid var(--blue-light, #3F96FC);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+  .circular-radio {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  .circular-radio:checked::before {
+    content: "\2713";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+    background-color: #ff3d9a;
+  }
+
+  .button-heart-wanna {
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--pink, #FF3D9A);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .button-heart-wanna img {
+    width: 25px;
+    height: 23px;
+  }
+  
+  .button-cancel {
+    margin-top: -5%;
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--gray-dark, #37383F);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .button-cancel img {
+    width: 12px;
+    height: 22px;
+  }
+  
+
+  /*ADOPT_MODAL*/
+.Adopt_Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #ffffff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+}
+
+.Title_adopt h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0; 
+}
+
+
+.SubTitle_adopt p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 4px; 
+}
+
+.Main_form_adopt{
+    width: 384px;
+    gap: 24px;
+}
+
+.main_email_dopt,
+.main_name_dopt p{
+    width: 384px;
+    gap: 8px;
+}
+
+.Form_email_dopt,
+.Form_name_dopt{
+    width: 384px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    gap: 10px;
+    padding-left: 24px; 
+    padding-top: 15px;
+    background-color: transparent; 
+}
+
+#Adopt_Button{
+    width: 384px;
+}
+
+input[type="text"] {
+    border: none; 
+    background: transparent; 
+    flex: 1; 
+    outline: none; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Inter;
+}
+
+.Form_email input[type="text"]::placeholder,
+.Form_name input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.801);
+}
+
+
+.main_email_dopt p,
+.main_name_dopt p,
+.Date_of_birth p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF3D9A; 
+}
+
+.blue-text{
+    color: #3F96FC;
+}
+
+
+.frame {
+    display: flex;
+    gap: 8px;
+}
+
+
+.frame input[type="text"] {
+    width: 12px;
+    height: 30px;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 0; 
+    outline: none; 
+}
+
+
+.input-with-image .date-button {
+    width: 122.67px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    margin: 0; 
+    outline: none;
+    position: relative;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.input-with-image .date-button span {
+    flex: 1;
+}
+
+
+.input-with-image img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.date-selects {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.layout-button-adopt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    margin-bottom: 16px;
+    width: 122.67px; 
+    height: 56px;/* Defina a largura desejada para as opções */
+    position: relative;
+    gap: 8px;
+  
+  }
+
+
+
+.Terms_Buttons_adopt {
+    width: 384px;
+    display: flex; 
+    align-items: center;
+    gap: 12px;
+}
+
+
+.Terms_adopt {
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    size: 12px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.checkbox-label{
+    margin-right: 15px;
+    align-items: center;
+}
+
+.custom-checkbox{
+    opacity: 0;
+    
+}
+
+.checkbox-span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #37383f;
+    color: #37383F;
+    border-radius: 50%;
+}
+
+.checkbox-span::before{
+    content: "\2713";
+    font-size: 14px;
+    display: block;
+}
+
+.custom-checkbox:checked + .checkbox-span{
+    background-color: #04C27F;
+    color: white;
+}
+
+
+.pink-text{
+    color: #FF3D9A;
+}
+
+
+.Adopt_Modal_Buttons {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.Adopt_Modal_Buttons button {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    background: #04C27F;
+    color: white;
+    position: relative;
+}
+
+
+.Adopt_Modal_Buttons img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#Adopt_Button {
+    width: 410px;
+    height: 64px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    background: #04C27F;
+    color: white;
+    position: relative;
+}
+
+
+#Adopt_Button img {
+    width: 29.49px;
+    height: 25.5px;
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+
+
+#Cancel-button_adopt {
+    height: 64px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    background: #37383F;
+    color: white;
+    position: relative;
+}
+
+
+#Cancel-button_adopt img {
+    width: 12px;
+    height: 22px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }

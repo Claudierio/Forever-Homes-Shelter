@@ -2,146 +2,142 @@ body {
     font-family: "Poppins", sans-serif; 
 }
 
-/* Estilize a barra de navegação */
-/* Estilize a barra de navegação */
+
 .navbar {
-    width: 1208px; /* Largura */
-    height: 120px; /* Altura */
+    width: 1208px; 
+    height: 120px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto; 
     border-bottom: 3px solid black;
 }
 
-
-/* Estilize a lista de itens de navegação */
 .navbar-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 20px; 
 }
 
-/* Estilize cada item de navegaç-ão */
 .navbar-item {
-    font-family: "Poppins", sans-serif; /* Use a fonte Poppins */
+    font-family: "Poppins", sans-serif; 
     font-size: 19.5px;
     display: flex;
     align-items: center;
 }
 
-/* Estilize o logo */
+
 .navbar-item.logo img {
-    height: 60px; /* Defina a altura desejada para o logo */
+    height: 60px; 
     width: 60;
-    margin-right: 20px; /* Adicione um espaço à direita do logo */
+    margin-right: 20px; 
 }
 
-/* Estilize o número de telefone */
+
 .navbar-item.phone img {
-    height: 24px; /* Defina a altura desejada para o ícone de telefone */
-    margin-left: 60px; /* Adicione um espaço à direita do ícone de telefone */
+    height: 24px; 
+    margin-left: 60px; 
 }
 
 .navbar-item.phone {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Adicione um espaçamento à direita */
+    margin-right: 20px; 
 }
 
-/* Estilize os links */
+
 .navbar-item a {
     text-decoration: none;
     color: black;
 }
 
-/* Estilize os links quando passar o mouse sobre eles */
+
 .navbar-item a:hover {
     text-decoration: underline;
 }
 
-/* Estilize o botão "Donate" */
+
 .navbar-item.donate button {
-    background-color: #FF3D9A; /* Cor de fundo rosa */
+    background-color: #FF3D9A;
     border: none;
-    width: fit-content; /* Define a largura de acordo com o conteúdo */
-    height: 64px; /* Altura fixa */
-    padding: 16px 32px; /* Espaçamento interno */
-    border-radius: 32px; /* Arredonda as bordas */
+    width: fit-content;
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
     font-size: 18px;
-    font-family: "Poppins", sans-serif; /* Fonte Poppins */
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    gap: 8px;
     cursor: pointer;
 }
 
-/* Estilize o ícone de coração dentro do botão */
+
 .navbar-item.donate img {
     width: 25.81px;
-    height: 23.14px; /* Defina a altura desejada para o ícone de coração */
+    height: 23.14px;
     top: 5.07;
     left: 3.09;
-    margin-right: 10px; /* Adicione um espaço à direita do ícone */
+    margin-right: 10px;
 }
 
-/* Estilize o botão quando passar o mouse sobre ele */
+
 .navbar-item.donate button {
-    background-color: #FF3D9A  /* Altera a cor de fundo no hover */
+    background-color: #FF3D9A 
 }
 
 
-/* Estilize a div Main_Screen */
+
 .Main_Screen {
-    width: 1208px; /* Largura */
-    height: fit-content; /* Altura ajustável ao conteúdo */
-    padding: 80px 0 120px 0; /* Espaçamento interno (80px superior, 0px nos lados, 120px inferior) */
-    gap: 40px; /* Espaçamento entre elementos internos */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 1208px;
+    height: fit-content;
+    padding: 80px 0 120px 0;
+    gap: 40px;
+    margin: 0 auto;
 }
 
-/* Estilize a div Main_Content */
+
 .Main_Content {
-    max-width: 1208px; /* Largura fixa */
+    max-width: 1208px;
     display: flex;
     margin: 0 auto;
-    /*align-items: center;*/
+   
 }
 
-/* Estilize o título h1 */
+
 .Main_Content h1 {
-    width: 584px; /* Largura */
-    height: 154px; /* Altura */
-    font-family: "Poppins", sans-serif; /* Fonte Poppins */
-    font-size: 64px; /* Tamanho da fonte */
-    font-weight: 700; /* Peso da fonte */
-    line-height: 77px; /* Altura da linha */
-    letter-spacing: -0.02em; /* Espaçamento entre letras */
-    text-align: left; /* Alinhamento à esquerda */
-    margin: 0; /* Remova as margens padrão */
+    width: 584px;
+    height: 154px;
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: 0;
 }
 
-/* Estilize o parágrafo dentro de .Info_block */
+
 .Info_block p {
-    width: 584px; /* Largura */
-    height: 190px; /* Altura */
-    font-family: "Inter", sans-serif; /* Fonte Inter */
-    font-size: 24px; /* Tamanho da fonte */
-    font-weight: 500; /* Peso da fonte */
-    line-height: 38px; /* Altura da linha */
-    letter-spacing: 0px; /* Espaçamento entre letras */
-    text-align: left; /* Alinhamento à esquerda */
-    margin: 0; /* Remova as margens padrão */
+    width: 584px;
+    height: 190px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
 }
 
-/* Estilize a div .CTA_Block */
+
 .CTA_Block {
-    width: 584px; /* Largura fixa */
-    height: auto; /* Altura ajustável ao conteúdo */
-    gap: 24px; /* Espaçamento entre elementos internos */
+    width: 584px;
+    height: auto;
+    gap: 24px;
 
 }
 
@@ -149,53 +145,53 @@ body {
     padding-bottom: 20px;
 }
 
-/* Estilize o h3 */
+
 h3 {
-    width: 584px; /* Largura */
-    height: 51px; /* Altura */
-    font-family: "Poppins", sans-serif; /* Fonte Poppins */
-    font-size: 32px; /* Tamanho da fonte */
-    font-weight: 700; /* Peso da fonte */
-    line-height: 51px; /* Altura da linha */
-    letter-spacing: -0.02em; /* Espaçamento entre letras */
-    text-align: left; /* Alinhamento à esquerda */
-    margin: 0; /* Remova as margens padrão */
+    width: 584px;
+    height: 51px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: 0;
 }
 
 
 
-/* Estilize o botão "Apply to Adopt" */
+
 .navbar-item.apply-to-adopt button {
-    width: 263px; /* Largura */
-    height: 64px; /* Altura fixa */
-    padding: 16px 32px; /* Espaçamento interno */
-    border-radius: 32px; /* Arredonda as bordas */
-    border: 2px solid #1E1F27; /* Borda */
+    width: 263px;
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    border: 2px solid #1E1F27;
     font-size: 18px;
-    font-family: "Poppins", sans-serif; /* Fonte Poppins */
-    color: white; /* Texto branco */
-    background: #1E1F27; /* Cor de fundo */
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background: #1E1F27;
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    gap: 8px;
     cursor: pointer;
 }
 
-/* Estilize a imagem dentro do botão "Apply to Adopt" */
+
 .navbar-item.apply-to-adopt button img {
     width: 29.49px; 
     height: 25.5px; 
 }
 
 
-/* Estilize o botão "Apply to Adopt" quando passar o mouse sobre ele */
+
 .navbar-item.apply-to-adopt button {
     background-color: transparent; 
     color: #1E1F27; 
 }
 
 
-/* Container para os botões */
+
 .Group_of_Buttons {
     height: 64px; 
     gap: 32px; 
@@ -222,8 +218,8 @@ h3 {
     height: 616px; /
 }
 
-/* Estilize a div .Stats_Block */
-/* Estilize a div .Stats_Block */
+
+
 
 .Stats_Block {
     background-color: #1e1f27;
@@ -236,21 +232,21 @@ h3 {
     padding-right: 152px;
     padding-bottom: 80px;
     padding-left: 152px;
-    position: relative; /* Adicione position: relative; */
+    position: relative;
 
-    /* Adicione flex-wrap para controlar o layout em telas menores */
+   
     flex-wrap: wrap;
 }
 
 
-/* Estilize os elementos dentro de .Stats_Block com background-color */
+
 .Stats_Block * {
     background-color: #1e1f27;
 }
 
 
 
-/* Estilize a div .Text_Information */
+
 .Text_Information {
     width: 100%;
     display: flex;
@@ -260,9 +256,9 @@ h3 {
     text-align: center;
 }
 
-/* Estilize o h2 dentro da .Text_Information */
+
 .Text_Information h2 {
-    width: 100%; /* Altere a largura para 100% para que o texto se ajuste a telas menores */
+    width: 100%;
     height: 134px;
     font-family: 'Poppins', sans-serif;
     font-size: 56px;
@@ -273,7 +269,7 @@ h3 {
     color: #FFFFFF;
 }
 
-/* Estilize os <p class="H"> dentro de .Stats */
+
 .Sttats .H {
     width: 376px;
     height: 77px;
@@ -286,7 +282,7 @@ h3 {
     color: #F8DB46;
 }
 
-/* Estilize os <p class="Text"> dentro de .Stats */
+
 .Sttats .Text {
     width: 376px;
     height: 51px;
@@ -299,17 +295,17 @@ h3 {
     color: white;
 }
 
-/* Estilize a div Stats */
+
 .Sttats {
     display: flex; 
     justify-content: space-between; 
 
-/* Estilize cada uma das divs internas */
+
 .Animals_Rescued,
 .Raised,
 .Tails_Found_a_Home {
-    flex: 1; /* Cada div ocupa o espaço disponível igualmente */
-    text-align: center; /* Alinha o conteúdo ao centro horizontalmente */
+    flex: 1;
+    text-align: center;
 }}
 
 .prev {
@@ -348,11 +344,11 @@ h3 {
     pointer-events: none;
 }
 
-/* Posicione a div .prev à esquerda das imagens */
+
 .prev {
-    width: 14px; /* Largura fixa */
-    height: 14px; /* Altura fixa */
-    border-radius: 21px; /* Raio de borda */  
+    width: 14px;
+    height: 14px;
+    border-radius: 21px;  
     position: absolute;
     top: 77%;
     cursor: pointer;
@@ -361,14 +357,14 @@ h3 {
     color: white;
     left: -10px;
     margin-left: 14%;
-    z-index: 1; /* Defina um z-index maior */
+    z-index: 1;
 }
 
-/* Posicione a div .next à direita dentro do slider-container */
+
 .next {
-    width: 14px; /* Largura fixa */
-    height: 14px; /* Altura fixa */
-    border-radius: 21px; /* Raio de borda */  
+    width: 14px;
+    height: 14px;
+    border-radius: 21px;  
     position: absolute;
     top: 77%;
     cursor: pointer;
@@ -377,32 +373,32 @@ h3 {
     color: white;
     right: 20px;
     margin-right: 17%;
-    z-index: 1; /* Defina um z-index maior */
+    z-index: 1;
 }
 
 
-/*PAGE 3*/
+ /*PAGE 3*/
 .Donations_Block {
     background-color: #1e1f27;
-    width: 100%; /* Largura de 1512px */
-    height: auto; /* Altura ajustável ao conteúdo */
-    padding: 80px 0 120px 0; /* Espaçamento interno (80px superior, 0px nos lados, 120px inferior) */
+    width: 100%;
+    height: auto;
+    padding: 80px 0 120px 0;
 }
 
-/* Estilize a .Donations_Block */
+
 .Main_page3 {
-    width: 100%; /* Largura fixa */
-    height: auto; /* Altura ajustável ao conteúdo */
-    gap: 80px; /* Espaçamento entre elementos internos */
+    width: 100%;
+    height: auto;
+    gap: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centralize horizontalmente */
+    margin: 0 auto;
 }
 
 
-/* Estilize o h1 dentro da div .h2 */
+
 .h2 h1 {
     width: 1208px;
     height: 67px;
@@ -418,36 +414,36 @@ h3 {
     background-color: #1e1f27;
 }
 
-/* Estilize a .Row_1 */
+
 .Row_1,
 .Row_2 {
-    width: 1208px; /* Largura fixa de 1208px */
-    height: 355px; /* Altura fixa de 355px */
+    width: 1208px;
+    height: 355px;
     display: flex;
-    gap: 40px; /* Espaçamento entre os cards */
-    justify-content: space-between; /* Distribui os cards igualmente no espaço disponível */
+    gap: 40px;
+    justify-content: space-between;
 }
 
-/* Adicione um espaçamento vertical de 80px entre Row_1 e Row_2 */
+
 .Row_2 {
-    margin-top: 80px; /* Espaçamento superior de 80px */
+    margin-top: 80px;
 }
 
 
-/* Estilize os cartões individuais */
+
 .Shelter,
 .Vetting,
 .Facilities {
-    width: 376px; /* Largura fixa de 376px para cada cartão */
-    height: auto; /* Altura ajustável ao conteúdo */
-    padding: 36px; /* Espaçamento interno de 36px em todas as direções */
-    border-radius: 24px; /* Arredondamento das bordas */
-    border: 2px solid #FFFFFF; /* Borda sólida de 2px com cor branca (#FFFFFF) */
+    width: 376px;
+    height: auto;
+    padding: 36px;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
     background-color: #1e1f27;
     color: white;
 }
 
-/* Estilize as imagens dentro dos cartões (Row_1 e Row_2) */
+
 .Shelter img {
     width: 63px;
     height: 53.05px;
@@ -484,7 +480,7 @@ h3 {
     margin-right: 20px;
 }
 
-/* Estilize a imagem dentro do cartão (Row_1 e Row_2) */
+
 .Icon {
     width: 100px;
     height: 100px;
@@ -493,36 +489,36 @@ h3 {
 }
 
 
-/* Estilize o conteúdo de texto dentro dos cartões */
+
 .Text_Bloc {
-    width: 304px; /* Largura fixa de 304px para o Text_Bloc */
-    height: auto; /* Altura ajustável ao conteúdo */
+    width: 304px;
+    height: auto;
 
     gap: 16px;
 }
 
-/* Ajuste o estilo do texto para que ele não saia do card */
+
 .Text_Bloc h1 {
-    font-size: 32px; /* Tamanho da fonte para o título */
+    font-size: 32px;
 }
 
 .Text_Bloc p {
-    font-family: "Inter", sans-serif; /* Fonte Inter */
-    font-size: 20px; /* Tamanho da fonte */
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
     line-height: 1.5;
-    text-align: left; /* Alinhamento à esquerda */
-    margin: 0; /* Remova as margens padrão */
+    text-align: left;
+    margin: 0;
 }
 
-/* Estilize os cartões individuais do Row_2 */
+
 .Row_2 .Transport,
 .Row_2 .Fosters,
 .Row_2 .Food {
-    width: 376px; /* Largura fixa de 376px para cada cartão */
-    height: auto; /* Altura ajustável ao conteúdo */
-    padding: 36px; /* Espaçamento interno de 36px em todas as direções */
-    border-radius: 24px; /* Arredondamento das bordas */
-    border: 2px solid #FFFFFF; /* Borda sólida de 2px com cor branca (#FFFFFF) */
+    width: 376px;
+    height: auto;
+    padding: 36px;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
     background-color: #1e1f27;
     color: white;
 }
@@ -537,14 +533,14 @@ h3 {
 }
 
 .Adoption_Main {
-    width: 100%; /* Largura fixa */
-    height: auto; /* Altura ajustável ao conteúdo */
-    gap: 40px; /* Espaçamento entre elementos internos */
+    width: 100%;
+    height: auto;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centralize horizontalmente */
+    margin: 0 auto;
 }
 
 
@@ -564,7 +560,7 @@ h3 {
 }
 
 .Text_Block {
-    width: 660px; /* Largura igual à largura da imagem */
+    width: 660px;
     height: 616px;
     gap: 32px;
     flex-direction: column; 
@@ -580,33 +576,33 @@ h3 {
 }
 
 .ul ul {
-    list-style-type: disc; /* Define o tipo de marcador para círculos */
-    margin-left: 20px; /* Adiciona um recuo à lista */
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 .ul ul li {
-    margin-bottom: 16px; /* Adiciona espaço entre os itens da lista */
+    margin-bottom: 16px;
 }
 
 .Button {
     align-self: flex-start;
     margin-top: 40px;
-    margin-left: 10%; /* Mova o botão para a direita */
+    margin-left: 10%;
 }
 
 .Button button {
-    background-color: black; /* Cor de fundo rosa */
+    background-color: black;
     border: none;
-    width: fit-content; /* Define a largura de acordo com o conteúdo */
-    height: 64px; /* Altura fixa */
-    padding: 16px 32px; /* Espaçamento interno */
-    border-radius: 32px; /* Arredonda as bordas */
+    width: fit-content;
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
     font-size: 18px;
-    font-family: "Poppins", sans-serif; /* Fonte Poppins */
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     align-items: center;
-    gap: 50px; /* Espaçamento entre o ícone e o texto */
+    gap: 50px;
     cursor: pointer;
 }
 
@@ -644,25 +640,25 @@ h3 {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    position: relative; /* Adicione position: relative; */
-    /* Adicione flex-wrap para controlar o layout em telas menores */
+    position: relative;
+   
     flex-wrap: wrap;
 }
 
 .Difference_Block_Main {
-    width: 1008px; /* Largura fixa */
-    gap: 50px; /* Espaçamento entre elementos internos */
-    margin: 0 auto; /* Centralize horizontalmente */
+    width: 1008px;
+    gap: 50px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 100px; /* Altura ajustável ao conteúdo */
+    height: 100px;
 }
 
 .Difference_Block_h1 {
-    width: 1208px; /* Largura fixa */
-    height: 200px; /* Altura ajustável ao conteúdo */
-    gap: 110px; /* Espaçamento entre elementos internos */
-    margin: 0 auto; /* Centralize horizontalmente */
+    width: 1208px;
+    height: 200px;
+    gap: 110px;
+    margin: 0 auto;
     color: white;
     
 
@@ -681,7 +677,7 @@ h3 {
 .diferrence_cards{
     display: flex;
     justify-content: space-between;
-    /* Distribuir o espaço igualmente entre os cartões */
+   
     padding-bottom: 30px;
     margin-top: 40px;
 }
@@ -733,7 +729,7 @@ h3 {
     margin: 10px;
     padding-top: 30px;
     padding-bottom: 10px;
-    /*overflow: hidden;*/
+   
     
 }
 
@@ -746,43 +742,43 @@ h3 {
     text-align: center;
     width: 224px;
     height: 64px;
-    padding: 16px 24px; /* Alterado o padding para usar valores separados por espaço */
+    padding: 16px 24px;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent; /* Define o plano de fundo como transparente */
+    background-color: transparent;
     border: 2px solid;/* Adicione uma borda de 2px sólida branca */
     color: white;
     border: none;
     outline: none;
 }
 
-/* Configurações para o botão dentro de .Adopt_or_Foster */
+
 .Adopt_or_Foster button {
     background: #04C27F;
     color: black;
 }
 
-/* Configurações para o botão dentro de .Volunteer */
+
 .Volunteer button {
     background: #F1D06E;
     color: black;
 }
 
-/* Configurações para o botão dentro de .Donate_Monthly */
+
 .Donate_Monthly button {
     background: #FF3D9A;
     color: white;
 }
 
-/* Configurações para o botão dentro de .Start_a_Fundraiser */
+
 .Start_a_Fundraiser button {
     background: #5758F1;
     color: white;
 }
 
-/* Efeito de hover para todos os botões */
+
 .Adopt_or_Foster button:hover {
     background-color: white;
     color: #1e1f27;
@@ -801,14 +797,14 @@ h3 {
     display: flex;   
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centralize horizontalmente */
+    margin: 0 auto;
 
 }
 
 .Text_Block_adopt{
-    width: 1208px; /* Largura fixa */
-    gap: 50px; /* Espaçamento entre elementos internos */
-    margin: 0 auto; /* Centralize horizontalmente */
+    width: 1208px;
+    gap: 50px;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -914,15 +910,15 @@ h3 {
 
 /*PAG 7*/
 .Subscription_Block{
-    width: 100%; /* Largura preenchendo o contêiner pai */
-    padding: 40px 0 120px 0; /* Espaçamento */
-    background: #5758F1; /* Cor de fundo */
+    width: 100%;
+    padding: 40px 0 120px 0;
+    background: #5758F1;
     display: flex;
 }
 
 .subscription_main {
     width: Fixed (1,208px); 
-    margin: 0 auto; /* Centralize horizontalmente */
+    margin: 0 auto;
 }
 
 .subscription_main h2 {
@@ -957,7 +953,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    gap: 24px; /* Espaçamento entre elementos internos */
+    gap: 24px;
     align-items: center;
 }
 
@@ -973,17 +969,17 @@ h3 {
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 24px; /* Espaço à esquerda para alinhar o texto */
+    padding-left: 24px;
     padding-top: 10px;
     background-color: transparent; 
     color: #ffffff; 
 }
 
 input[type="text"] {
-    border: none; /* Remova a borda padrão do input */
-    background: transparent; /* Defina o fundo do input como transparente para que a borda .Field apareça */
-    flex: 1; /* Ocupar todo o espaço disponível no .Field */
-    outline: none; /* Remova o contorno ao focar o input */
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0em;
@@ -1002,8 +998,8 @@ input[type="text"] {
     padding: 24px 32px 24px 24px 24px;
     border-radius: 32px;
     gap: 8px;
-    color: black; /* Cor do texto */
-    background: #FFFFFF; /* Cor de fundo branca */
+    color: black;
+    background: #FFFFFF;
     border: 2px solid transparent;
     font-family: Poppins, sans-serif;
     font-size: 20px;
@@ -1014,16 +1010,16 @@ input[type="text"] {
 }
 
 .Buttons button:hover {
-    background: transparent; /* Altera o fundo ao passar o mouse */
-    color: #FFFFFF; /* Altera a cor do texto ao passar o mouse */
-    border-color: #FFFFFF; /* Altera a cor da borda ao passar o mouse */
+    background: transparent;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
     
 }
 
 /*FOOTER*/
 .footer_text_end{
-    width: 100%; /* Largura preenchendo o contêiner pai */
-    /*padding: 40px 0 80px 0; Espaçamento */
+    width: 100%;
+   
     display: flex;
     
 }
@@ -1034,12 +1030,12 @@ input[type="text"] {
     display: flex;   
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centralize horizontalmente */
+    margin: 0 auto;
 }
 
 .Links_Block {
     width: 1208px; 
-    justify-content: space-between; /* Espaço entre os itens */
+    justify-content: space-between;
     display: flex;
     align-items: flex-start;
     border-bottom: 3px solid black;
@@ -1047,11 +1043,11 @@ input[type="text"] {
 }
 
 .logo_nav img{
-    width: 272px; /* Largura fixa */
-    height: 272px; /* Altura ajustável ao conteúdo */
-    gap: 19px; /* Espaço entre elementos internos */
+    width: 272px;
+    height: 272px;
+    gap: 19px;
     display: flex;
-    align-items: center; /* Centralize verticalmente */
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -1139,21 +1135,20 @@ input[type="text"] {
 }
 
 .part1 {
-    color: #1E1F27; /* Cor para "We are not just a rescue" */
+    color: #1E1F27;
 }
 
 .part2 {
-    color: #FF3D9A; /* Cor para "We are a refuge" */
+    color: #FF3D9A;
 }
 
-/* DONATE_MODAL*/
+
 
 .Donate_Modal {
     width: 448px;
     height: 686px;
     position: fixed;
-    /*top: -4255px;
-    left: 2606px;*/
+   
     padding: 32px;
     border-radius: 32px;
     background-color: #ffffff; 
@@ -1254,7 +1249,7 @@ input[type="money"] {
     color: rgba(0, 0, 0, 0.801);
 }
 
-/* Estilos para o elemento <p> dentro de .email */
+
 .email p,
 .Name p,
 .Date_of_birth p {
@@ -1342,12 +1337,12 @@ input[type="money"] {
     gap: 8px;
     border-radius: 32px;
     background: var(--pink, #FF3D9A);
-    border: none; /* Para remover a borda padrão do botão */
-    cursor: pointer; /* Adiciona um cursor indicando que é clicável */
-    color: white; /* Define a cor do texto como branca */
-    font-weight: bold; /* Define a espessura da fonte como negrito */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    text-decoration: none; /* Remove sublinhado do link (caso seja um link) */
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
   }
   
   .button-heart-wanna img {
@@ -1365,12 +1360,12 @@ input[type="money"] {
     gap: 8px;
     border-radius: 32px;
     background: var(--gray-dark, #37383F);
-    border: none; /* Para remover a borda padrão do botão */
-    cursor: pointer; /* Adiciona um cursor indicando que é clicável */
-    color: white; /* Define a cor do texto como branca */
-    font-weight: bold; /* Define a espessura da fonte como negrito */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    text-decoration: none; /* Remove sublinhado do link (caso seja um link) */
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
   }
   
   .button-cancel img {
@@ -1379,8 +1374,8 @@ input[type="money"] {
   }
   
 
-  /*ADOPT_MODAL*/
-  /* Estilos para a div Adopt_Modal */
+ 
+ 
 .Adopt_Modal {
     position: fixed;
     top: 50%;
@@ -1403,7 +1398,7 @@ input[type="money"] {
     margin: 0; 
 }
 
-/* Estilos apenas para o elemento <p> dentro de .SubWrap */
+
 .SubTitle_adopt p {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -1457,7 +1452,7 @@ input[type="text"] {
     color: rgba(0, 0, 0, 0.801);
 }
 
-/* Estilos para o elemento <p> dentro de .email */
+
 .main_email_dopt p,
 .main_name_dopt p,
 .Date_of_birth p {
@@ -1474,13 +1469,13 @@ input[type="text"] {
     color: #3F96FC;
 }
 
-/* Estilos para o contêiner .frame */
+
 .frame {
-    display: flex; /* Torna os elementos filhos flexíveis */
-    gap: 8px; /* Espaçamento entre os elementos */
+    display: flex;
+    gap: 8px;
 }
 
-/* Estilos para os inputs dentro de .frame */
+
 .frame input[type="text"] {
     width: 12px;
     height: 30px;
@@ -1490,38 +1485,38 @@ input[type="text"] {
     outline: none; 
 }
 
-/* Estilos para os botões dentro de .input-with-image */
+
 .input-with-image .date-button {
-    width: 122.67px; /* Largura especificada */
-    height: 56px; /* Altura especificada */
+    width: 122.67px;
+    height: 56px;
     border-radius: 8px;
-    border: 1px solid #3F96FC; /* Cor da borda */
+    border: 1px solid #3F96FC;
     margin: 0; 
     outline: none;
     position: relative;
-    background: transparent; /* Define o fundo como transparente */
-    display: flex; /* Torna os elementos filhos flexíveis */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    padding: 16px; /* Espaçamento interno especificado */
-    gap: 8px; /* Espaçamento entre elementos */
-    cursor: pointer; /* Define o cursor como apontador */
+    background: transparent;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    cursor: pointer;
 }
 
-/* Estilos para o texto dentro dos botões */
+
 .input-with-image .date-button span {
-    flex: 1; /* Ocupa todo o espaço disponível no botão */
+    flex: 1;
 }
 
-/* Estilos para as imagens dentro de .input-with-image */
+
 .input-with-image img {
-    width: 16px; /* Define a largura desejada para as imagens */
-    height: 16px; /* Define a altura desejada para as imagens */
-    margin-left: 8px; /* Espaçamento à esquerda da imagem */
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
 }
 .date-selects {
     display: flex;
-    justify-content: space-between; /* Alinha os selects lado a lado */
-    margin: 0 auto; /* Centralize horizontalmente */
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .layout-button-adopt{
@@ -1545,7 +1540,7 @@ input[type="text"] {
   }
 
 
-/* Estilos para a div .Terms_Buttons */
+
 .Terms_Buttons_adopt {
     width: 384px;
     display: flex; 
@@ -1601,7 +1596,7 @@ input[type="text"] {
     color: #FF3D9A;
 }
 
-/* Estilos para a div .Buttons */
+
 .Adopt_Modal_Buttons {
     width: 410px;
     display: flex;
@@ -1609,32 +1604,32 @@ input[type="text"] {
     gap: 12px;
 }
 
-/* Estilos para os botões dentro de .Buttons */
+
 .Adopt_Modal_Buttons button {
     padding: 16px 24px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: center;
     font-weight: 700;
-    background: #04C27F; /* Cor de fundo para o botão "I wanna Adopt!" */
-    color: white; /* Cor do texto para o botão "I wanna Adopt!" */
-    position: relative; /* Para posicionar a imagem */
+    background: #04C27F;
+    color: white;
+    position: relative;
 }
 
-/* Estilos para a imagem dentro dos botões */
+
 .Adopt_Modal_Buttons img {
     width: auto;
     height: auto;
-    max-width: 100%; /* Para garantir que a imagem não ultrapasse os limites do botão */
-    max-height: 100%; /* Para garantir que a imagem não ultrapasse os limites do botão */
-    position: absolute; /* Posiciona a imagem absolutamente dentro do botão */
-    top: 75%; /* Ajusta a posição vertical da imagem (por exemplo, 75% para descer um pouco) */
-    left: 50%; /* Move a imagem 50% para a direita */
-    transform: translate(-50%, -50%); /* Centraliza a imagem horizontalmente */
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Estilos para o botão "I wanna Adopt!" */
+
 #Adopt_Button {
     width: 410px;
     height: 64px;
@@ -1644,21 +1639,21 @@ input[type="text"] {
     cursor: pointer;
     text-align: center;
     font-weight: 700;
-    background: #04C27F; /* Cor de fundo para o botão "I wanna Adopt!" */
-    color: white; /* Cor do texto para o botão "I wanna Adopt!" */
+    background: #04C27F;
+    color: white;
     position: relative;
 }
 
-/* Estilos para a imagem dentro do botão "I wanna Adopt!" */
+
 #Adopt_Button img {
     width: 29.49px;
     height: 25.5px;
-    top: 50%; /* Ajuste a posição vertical da imagem para centralizar */
-    left: 32%; /* Move a imagem 50% para a direita */
-    transform: translate(-50%, -50%); /* Centraliza a imagem vertical e horizontalmente */
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
 }
 
-/* Estilos para o botão "Cancel" */
+
 #Cancel-button_adopt {
     height: 64px;
     padding: 16px 24px;
@@ -1667,16 +1662,16 @@ input[type="text"] {
     cursor: pointer;
     text-align: center;
     font-weight: 700;
-    background: #37383F; /* Cor de fundo para o botão "Cancel" */
-    color: white; /* Cor do texto para o botão "Cancel" */
+    background: #37383F;
+    color: white;
     position: relative;
 }
 
-/* Estilos para a imagem dentro do botão "Cancel" */
+
 #Cancel-button_adopt img {
     width: 12px;
     height: 22px;
-    top: 50%; /* Ajuste a posição vertical da imagem para centralizar */
-    left: 40%; /* Move a imagem 50% para a direita */
-    transform: translate(-50%, -50%); /* Centraliza a imagem vertical e horizontalmente */
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }

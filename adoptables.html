@@ -6,6 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="adoptables.css">
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item logo">
+                <img src="components/rescue.png" alt="logo">
+                <a href="#">Rescue Center</a>
+            </li>
+            <li class="navbar-item"><a href="#">Apply to Adopt</a></li>
+            <li class="navbar-item"><a href="#">Volunteer</a></li>
+            <li class="navbar-item"><a href="#">Ways to Give</a></li>
+            <li class="navbar-item"><a href="#">Events</a></li>
+            <li class="navbar-item phone">
+                <img src="components/telefone.png" alt="tel">
+                <a href="#">631-249-7325</a>
+            </li>
+            <li class="navbar-item donate">
+                <button onclick="openModal()">
+                    <img src="components/heart.png" alt="heart.png">
+                    Donate
+                </button>
+            </li>
+            
+            <div class="Donate_Modal" style="display: none;" >
+                <div class="Title">
+                    <h1>Choose your Donate </h1>
+                </div>
+                <div class="form_donate">
+                    <div class="email">
+                        <p>EMAIL<span class="blue-text">*</span></p>
+                        <div class="Form_email">
+                            <input type="text" placeholder="Your email">
+                        </div>
+                    </div>
+        
+                    <div class="email">
+                        <p>HOW MUCH CAN YOU HELP?*<span class="blue-text">*</span></p>
+                        <div class="Form_money">
+                            <input type="money" placeholder="R$ 95,00">
+                        </div>
+                    </div>
+        
+                    <div class="email">
+                        <p class="email">PAYMENT METHOD<span class="blue-text">*</span></p>
+        
+                        <div class="button-container">
+                          <label class="layout-button">
+                            PIX
+                            <input
+                              type="radio"
+                              class="circular-radio"
+                              name="payment-method"
+                              onclick="toggleStyle(this)"
+                            />
+                          </label>
+                          <label class="second-layout-button">
+                            Credit<br />Card
+                            <input
+                              type="radio"
+                              class="circular-radio"
+                              name="payment-method"
+                              onclick="toggleStyle(this)"
+                            />
+                          </label>
+                          <label class="layout-button">
+                            PayPal
+                            <input
+                              type="radio"
+                              class="circular-radio"
+                              name="payment-method"
+                              onclick="toggleStyle(this)"
+                            />
+                          </label>
+                        </div>
+              
+                        <div class="donate-wrap-button">
+                          <button class="button-heart-wanna">
+                            <img src="components/heart.png" width="25" height="23" />
+                            I wanna Help!
+                          </button>
+                        </div>
+                        <div class="donate-wrap-button">
+                          <button class="button-cancel" onclick="closeModal()">
+                            <img
+                              src="components/vector.png"
+                              width="12"
+                              height="22"
+                            />
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <script src="js/donate_modal.js" ></script>
+        </ul>
+
+        <div class="Adopt_Modal" style="display: none;">
+            <div class="Title_adopt">
+                <h1>Apply to Adopt</h1>
+                <div class="SubTitle_adopt">
+                    <p>Small text description can goes here</p>
+                </div>
+            </div>
+    
+            <div class="Main_form_dopt">
+
+                <div class="main_email_dopt">
+                    <p>EMAIL<span class="blue-text">*</span></p>
+                    <div class="Form_email_dopt">
+                        <input type="text" placeholder="Your email">
+                    </div>
+                </div>
+    
+                <div class="main_name_dopt">
+                    <p>FULL NAME<span class="blue-text">*</span></p>
+                    <div class="Form_name_dopt">
+                        <input type="text" placeholder="Your name">
+                    </div>
+                </div>
+    
+                <div class="Date_of_birth">
+                    <p>DATE OF BIRTH<span class="blue-text">*</span></p>
+                    <div class="date-selects">
+                        <select class="layout-button-adopt" id="day" name="day">
+                            <option value="" disabled selected>Day</option>
+                        </select>
+                        <select class="layout-button-adopt" id="month" name="month">
+                            <option value="" disabled selected>Month</option>
+                        </select>
+                        <select class="layout-button-adopt" id="year" name="year">
+                            <option value="" disabled selected>Year</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="Terms_Buttons_adopt">
+                    <div class="Terms_adopt">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="checkbox-span"> </span>
+                        </label>
+                        <p>I agree with <span class="pink-text">Privacy Policy</span> and <span class="pink-text">Terms of
+                                Conditions</span></p>
+                    </div>
+                </div>
+                <div class="Adopt_Modal_Buttons">
+                    <button id="Adopt_Button">
+                        <img src="components/dog_button.png" alt="vector.png">
+                        I wanna Adopt!
+                    </button>
+
+                    <button id="Cancel-button_adopt" onclick="closeAdoptModal() ">
+                        <img src="components/vector.png" alt="vector.png">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="js/adopt_modal.js" ></script>
+        
+    </nav>
 </head>
 
 <body>
@@ -127,11 +287,63 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById("back-button").onclick = function() {
-            window.location.href = "home.html";
-        };
-    </script>
+        <!--PAG 7-->
+        <div class="Footer">
+            <div class="footer_text_end">
+                <div class="Main_Footer">
+                    <div class="Links_Block">
+                        <div class="logo_nav">
+                            <img src="components/rescue_nav1.png" alt="rescue.png">
+                        </div>
+                        <div class="Links_Row_1">
+                            <p>Adopt a Pet</p>
+                            <p>Adoptable Dogs</p>
+                            <p>Adoptable Cats</p>
+                            <p>Become a Foster</p>
+                            <p>Rescue Center</p>
+                            <p>Get Involved</p>
+                        </div>
+                        <div class="Links_Row_2">
+                            <p>Ways to Donate</p>
+                            <p>Upcoming Events</p>
+                            <p>Outreach Programs</p>
+                            <p>Who We Are</p>
+                            <p>Contact Us</p>
+                            <p>Shop With Purpose</p>
+                        </div>
+                        <div class="contacts">
+                            <div class="Info">
+                                <div class="Address">
+                                    <img src="components/icons/point_icon.png" alt="point_icon.png">
+                                    <div class="Sub_Address">
+                                        <p>PO Box 83644</p>
+                                        <p>Middleton, 2452 Wilson</p>
+                                    </div>
+                                </div>
+                                <div class="Phone">
+                                    <img src="components/icons/tel_icon.png" alt="tel_icon.png">
+                                    <p>631-249-7325</p>
+                                </div>
+                                <div class="Mail">
+                                    <img src="components/icons/email_icon.png" alt="icon.png">
+                                    <p>pet_home@gmail.com</p>
+                                </div>
+                                <div class="Socials">
+                                    <img src="components/icons/twitter_icon.png" alt="twitter_icon.png">
+                                    <img src="components/icons/whatsapp_icon.png" alt="whatsapp_icon.png">
+                                    <img src="components/icons/instagram_icon.png" alt="instagram_icon.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Text_end">
+                <p><span class="part1">We are not just a rescue</span> <span class="part2">We are a refuge</span></p>
+            </div>
+        </div>
+        
+        <script src="js/back_button.js"></script>
 
 </body>
 

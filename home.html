@@ -81,11 +81,12 @@
                         </div>
               
                         <div class="donate-wrap-button">
-                          <button class="button-heart-wanna">
+                          <button class="button-heart-wanna" id="I_wanna_help">
                             <img src="components/heart.png" width="25" height="23" />
                             I wanna Help!
                           </button>
                         </div>
+                        <script src="js/sucess.js"></script>
                         <div class="donate-wrap-button">
                           <button class="button-cancel" onclick="closeModal()">
                             <img
@@ -156,6 +157,7 @@
                         <img src="components/dog_button.png" alt="vector.png">
                         I wanna Adopt!
                     </button>
+                    <script src="js/sucess.js"></script>
 
                     <button id="Cancel-button_adopt" onclick="closeAdoptModal() ">
                         <img src="components/vector.png" alt="vector.png">
@@ -389,7 +391,7 @@
                             </ul>
                         </div>
                         <div class="Button">
-                            <Button>Apply to Adopt</Button>
+                            <Button onclick="openAdoptModal()">Apply to Adopt</Button>
                         </div>
                     </div>
 
@@ -460,10 +462,10 @@
 
                     <div class="Buttom_Group">
                         <div class="view_Adoptables_Button">
-                            <button>View Adoptables</button>
+                            <button id="view_Adoptables_Button2">View Adoptables</button>
                         </div>
                         <div class="Apply_to_Adopt_Button">
-                            <button>Apply to Adopt</button>
+                            <button onclick="openAdoptModal()">Apply to Adopt</button>
                         </div>
                     </div>
                 </div>

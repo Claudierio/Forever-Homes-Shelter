@@ -6,3 +6,4 @@ function openAdoptModal() {
 function closeAdoptModal() {
     document.querySelector('.Adopt_Modal').style.display = 'none';
 }
+
