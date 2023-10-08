@@ -21,96 +21,84 @@
                 <img src="components/telefone.png" alt="tel">
                 <a href="#">631-249-7325</a>
             </li>
+
             <li class="navbar-item donate">
                 <button onclick="openModal()">
                     <img src="components/heart.png" alt="heart.png">
                     Donate
                 </button>
             </li>
-            
-            <div class="Donate_Modal" style="display: none;" >
-                <div class="Title">
-                    <h1>Choose your Donate </h1>
-                </div>
+
+            <div id="donate_modal" class="Donate_Modal" style="display: none;">
                 <div class="form_donate">
+
+
+                    <div class="Title">
+                        <h1>Choose your Donate </h1>
+                    </div>
                     <div class="email">
                         <p>EMAIL<span class="blue-text">*</span></p>
                         <div class="Form_email">
                             <input type="text" placeholder="Your email">
                         </div>
                     </div>
-        
+
                     <div class="email">
                         <p>HOW MUCH CAN YOU HELP?*<span class="blue-text">*</span></p>
                         <div class="Form_money">
                             <input type="money" placeholder="R$ 95,00">
                         </div>
                     </div>
-        
+
                     <div class="email">
                         <p class="email">PAYMENT METHOD<span class="blue-text">*</span></p>
-        
                         <div class="button-container">
-                          <label class="layout-button">
-                            PIX
-                            <input
-                              type="radio"
-                              class="circular-radio"
-                              name="payment-method"
-                              onclick="toggleStyle(this)"
-                            />
-                          </label>
-                          <label class="second-layout-button">
-                            Credit<br />Card
-                            <input
-                              type="radio"
-                              class="circular-radio"
-                              name="payment-method"
-                              onclick="toggleStyle(this)"
-                            />
-                          </label>
-                          <label class="layout-button">
-                            PayPal
-                            <input
-                              type="radio"
-                              class="circular-radio"
-                              name="payment-method"
-                              onclick="toggleStyle(this)"
-                            />
-                          </label>
+                            <label class="layout-button">
+                                PIX
+                                <input type="radio" class="circular-radio" name="payment-method" id="pixRadio"
+                                    onclick="toggleStyle(this)" />
+                            </label>
+                            <label class="second-layout-button">
+                                Credit<br />Card
+                                <input type="radio" class="circular-radio" name="payment-method" id="creditCardRadio"
+                                    onclick="toggleStyle(this)" />
+                            </label>
+                            <label class="third-layout-button">
+                                PayPal
+                                <input type="radio" class="circular-radio" name="payment-method" id="paypalRadio"
+                                    onclick="toggleStyle(this)" />
+                            </label>
+                            <script src="js/donate_buttons.js"></script>
                         </div>
-              
+
+
                         <div class="donate-wrap-button">
-                          <button class="button-heart-wanna" id="I_wanna_help">
-                            <img src="components/heart.png" width="25" height="23" />
-                            I wanna Help!
-                          </button>
+                            <button class="button-heart-wanna" id="I_wanna_help">
+                                <img src="components/heart.png" width="25" height="23" />
+                                I wanna Help!
+                            </button>
                         </div>
                         <script src="js/sucess.js"></script>
                         <div class="donate-wrap-button">
-                          <button class="button-cancel" onclick="closeModal()">
-                            <img
-                              src="components/vector.png"
-                              width="12"
-                              height="22"
-                            />
-                            Cancel
-                          </button>
+                            <button class="button-cancel" onclick="closeModal()">
+                                <img src="components/vector.png" width="12" height="22" />
+                                Cancel
+                            </button>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
-            <script src="js/donate_modal.js" ></script>
+            <script src="js/donate_modal.js"></script>
         </ul>
 
-        <div class="Adopt_Modal" style="display: none;">
+        <div id="adopt_modal" class="Adopt_Modal" style="display: none;">
             <div class="Title_adopt">
                 <h1>Apply to Adopt</h1>
                 <div class="SubTitle_adopt">
                     <p>Small text description can goes here</p>
                 </div>
             </div>
-    
+
             <div class="Main_form_dopt">
 
                 <div class="main_email_dopt">
@@ -119,14 +107,14 @@
                         <input type="text" placeholder="Your email">
                     </div>
                 </div>
-    
+
                 <div class="main_name_dopt">
                     <p>FULL NAME<span class="blue-text">*</span></p>
                     <div class="Form_name_dopt">
                         <input type="text" placeholder="Your name">
                     </div>
                 </div>
-    
+
                 <div class="Date_of_birth">
                     <p>DATE OF BIRTH<span class="blue-text">*</span></p>
                     <div class="date-selects">
@@ -141,14 +129,15 @@
                         </select>
                     </div>
                 </div>
-    
+
                 <div class="Terms_Buttons_adopt">
                     <div class="Terms_adopt">
                         <label class="checkbox-label">
                             <input type="checkbox" class="custom-checkbox">
                             <span class="checkbox-span"> </span>
                         </label>
-                        <p>I agree with <span class="pink-text">Privacy Policy</span> and <span class="pink-text">Terms of
+                        <p>I agree with <span class="pink-text">Privacy Policy</span> and <span class="pink-text">Terms
+                                of
                                 Conditions</span></p>
                     </div>
                 </div>
@@ -166,9 +155,10 @@
                 </div>
             </div>
         </div>
-        <script src="js/adopt_modal.js" ></script>
-        
+        <script src="js/adopt_modal.js"></script>
+
     </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -210,7 +200,7 @@
                 </div>
             </div>
 
-            
+
 
             <!-- Imagem à direita -->
             <div class="Image">
@@ -221,63 +211,68 @@
 
     <!--Page 2-->
     <div class="Stats_Block">
-        <div class="Main_Content">
-            <div class="Text_Information">
-                <h2>With your help, we <br>accomplished these goals</h2>
-                <div class="Sttats">
-                    <div class="Animals_Rescued">
-                        <p class="H">1400</p>
-                        <p class="Text">Animals Rescued</p>
-                    </div>
-                    <div class="Raised">
-                        <p class="H">$1.4 Million</p>
-                        <p class="Text">Raised</p>
-                    </div>
-                    <div class="Tails_Found_a_Home">
-                        <p class="H">940</p>
-                        <p class="Text">Tails Found a Home</p>
+        <div class="stats_block2">
+            <div class="Main_Content">
+                <div class="Text_Information">
+                    <h2>With your help, we <br>accomplished these goals</h2>
+                    <div class="Sttats">
+                        <div class="Animals_Rescued">
+                            <p class="H">1400</p>
+                            <p class="Text">Animals Rescued</p>
+                        </div>
+                        <div class="Raised">
+                            <p class="H">$1.4 Million</p>
+                            <p class="Text">Raised</p>
+                        </div>
+                        <div class="Tails_Found_a_Home">
+                            <p class="H">940</p>
+                            <p class="Text">Tails Found a Home</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="slider-container">
-            <div class="prev"><img src="components/carousel_desktop/Arrow_Left.png" alt="back" /></div>
-            <div class="next"><img src="components/carousel_desktop/Arrow_Right.png" alt="next" /></div>
-            <div class="slider">
-                <div class="slide">
-                    <img src="components/carousel_desktop/cat_yellow.png" alt="Image 2" />
-                    <img src="components/carousel_desktop/cat_green.png" alt="Image 1" />
-                    <img src="components/carousel_desktop/dog_white.png" alt="Image 4" />
-                    <img src="components/carousel_desktop/dog_blue.png" alt="Image 3" />
-                </div>
-                <div class="slide">
-                    <img src="components/carousel_desktop/cat_green.png" alt="Image 2" />
-                    <img src="components/carousel_desktop/dog_white.png" alt="Image 4" />
-                    <img src="components/carousel_desktop/dog_blue.png" alt="Image 1" />
-                    <img src="components/carousel_desktop/dog_pink.png" alt="Image 1" />
-                </div>
-                <div class="slide">
-                    <img src="components/carousel_desktop/dog_white.png" alt="Image 3" />
-                    <img src="components/carousel_desktop/dog_blue.png" alt="Image 1" />
-                    <img src="components/carousel_desktop/dog_pink.png" alt="Image 1" />
-                    <img src="components/carousel_desktop/cat_yellow.png" alt="Image 2" />
-                </div>
-                <div class="slide">
-                    <img src="components/carousel_desktop/dog_blue.png" alt="Image 4" />
-                    <img src="components/carousel_desktop/dog_pink.png" alt="Image 2" />
-                    <img src="components/carousel_desktop/cat_yellow.png" alt="Image 1" />
-                    <img src="components/carousel_desktop/cat_green.png" alt="Image 1" />
-                </div>
-                <div class="slide">
-                    <img src="components/carousel_desktop/dog_pink.png" alt="Image 4" />
-                    <img src="components/carousel_desktop/cat_yellow.png" alt="Image 1" />
-                    <img src="components/carousel_desktop/cat_green.png" alt="Image 2" />
-                    <img src="components/carousel_desktop/dog_white.png" alt="Image 1" />
+
+            <div class="slider-container">
+                <div class="prev"><img src="components/carousel_desktop/arrow-left.png"
+                        style="width: 44px; height: 44px;" alt="back" /></div>
+                <div class="next"><img src="components/carousel_desktop/arrow-right.png"
+                        style="width: 44px; height: 44px" alt="next" /></div>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="components/carousel_desktop/cat_yellow.png" alt="Image 2" />
+                        <img src="components/carousel_desktop/cat_green.png" alt="Image 1" />
+                        <img src="components/carousel_desktop/dog_white.png" alt="Image 4" />
+                        <img src="components/carousel_desktop/dog_blue.png" alt="Image 3" />
+                    </div>
+                    <div class="slide">
+                        <img src="components/carousel_desktop/cat_green.png" alt="Image 2" />
+                        <img src="components/carousel_desktop/dog_white.png" alt="Image 4" />
+                        <img src="components/carousel_desktop/dog_blue.png" alt="Image 1" />
+                        <img src="components/carousel_desktop/dog_pink.png" alt="Image 1" />
+                    </div>
+                    <div class="slide">
+                        <img src="components/carousel_desktop/dog_white.png" alt="Image 3" />
+                        <img src="components/carousel_desktop/dog_blue.png" alt="Image 1" />
+                        <img src="components/carousel_desktop/dog_pink.png" alt="Image 1" />
+                        <img src="components/carousel_desktop/cat_yellow.png" alt="Image 2" />
+                    </div>
+                    <div class="slide">
+                        <img src="components/carousel_desktop/dog_blue.png" alt="Image 4" />
+                        <img src="components/carousel_desktop/dog_pink.png" alt="Image 2" />
+                        <img src="components/carousel_desktop/cat_yellow.png" alt="Image 1" />
+                        <img src="components/carousel_desktop/cat_green.png" alt="Image 1" />
+                    </div>
+                    <div class="slide">
+                        <img src="components/carousel_desktop/dog_pink.png" alt="Image 4" />
+                        <img src="components/carousel_desktop/cat_yellow.png" alt="Image 1" />
+                        <img src="components/carousel_desktop/cat_green.png" alt="Image 2" />
+                        <img src="components/carousel_desktop/dog_white.png" alt="Image 1" />
+                    </div>
                 </div>
             </div>
+            <script src="js/carousel.js"></script>
         </div>
-        <script src="js/carrocel.js"></script>
     </div>
 
 
@@ -449,7 +444,6 @@
 
     <div class="Adopt_Block">
         <div class="adopt_block_main">
-
             <div class="Cat_img">
                 <img src="components/cat_fish.png" alt="cat_fish.png">
             </div>
@@ -489,14 +483,16 @@
             </div>
             <div class="Form">
                 <div class="Field">
-                    <input type="text" placeholder="Enter your email" style="color: white !important; opacity: 1 !important;">
+                    <input type="text" placeholder="Enter your email"
+                        style="color: white !important; opacity: 1 !important;">
                 </div>
-                
+
                 <div class="Buttons">
-                    <button>Subscribe</button>
+                    <button id="Subscribe_Button">Subscribe</button>
+                    <script src="js/sucess.js"></script>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -557,7 +553,7 @@
 
     </div>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

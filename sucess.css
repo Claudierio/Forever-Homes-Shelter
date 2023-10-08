@@ -325,9 +325,9 @@ input[type="money"] {
     gap: 40px;
     flex: 1 0 0;
     align-self: stretch;
-    width: 100%;
     background-color: #1e1f27;
-    height: 709px;
+    height: 422px;
+
 }
 
 .main_content {
@@ -338,11 +338,13 @@ input[type="money"] {
 }
 
 .info_block {
+    
     display: flex;
-    width: 584px;
+    width: 1208px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
+    margin: 0 auto;
 }
 
 .buttons {
@@ -387,7 +389,13 @@ input[type="money"] {
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -1.28px;
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Position the element absolutely */
+    top: 20%; /* Move it down by 50% of its own height */
+    left: 52%; /* Move it right by 50% of its own width */
+    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
 }
+
 
 .content_block_sucess {
     width: 1208px;
@@ -395,16 +403,14 @@ input[type="money"] {
     align-items: left;
 }
 
-
-
 .image_block {
     flex: 1;
 }
 
 .Text_block {
     flex: 1;
-}
 
+}
 
 .Text_block h1 {
     font-family: "Poppins", sans-serif;
@@ -412,7 +418,7 @@ input[type="money"] {
     font-weight: 700;
     line-height: 67px;
     letter-spacing: -0.02em;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -429,6 +435,124 @@ input[type="money"] {
 .yellow-text {
     color: #F8DB46;
 }
+
+.adopt_block_main{
+    margin-top: 90px;
+    width: 1208px; 
+    display: flex;   
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.Text_Block_adopt{
+    width: 2208px;
+    gap: 50px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.Text_h2 {
+    width: 1,208px;
+    height: 67px;
+    gap: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.Text_h2 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.yellow-text{
+    color: #F8DB46;
+}
+
+.CTA_Text {
+    margin-top: 60px;
+}
+
+.CTA_Text h3 {
+    width: 100%;
+    font-family: Poppins;
+    font-size: 30px;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
+}
+
+.Buttom_Group {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.Cat_img img {
+    width: 300px;
+    height: 400px;
+}
+
+.Dog_img img {
+    width: 300px;
+    height: 400px;
+}
+
+.view_Adoptables_Button button {
+    width: 238px;
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    gap: 8px;
+    background: #F8DB46;
+    color: black;
+    border: 2px solid transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.view_Adoptables_Button button:hover {
+    border-color: black;
+}
+
+.Apply_to_Adopt_Button button {
+    width: 223px;
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    gap: 8px;
+    background: transparent;
+    color: white;
+    border: 2px solid #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Apply_to_Adopt_Button button:hover {
+    background: white;
+    color: black;
+}
+
 
 /*FOOTER*/
 .footer_text_end {

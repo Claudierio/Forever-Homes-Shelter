@@ -1,8 +1,25 @@
-body {
-    font-family: "Poppins", sans-serif; 
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .navbar-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
 }
 
 
+
+body {
+    font-family: "Poppins", sans-serif; 
+}
 .navbar {
     width: 1208px; 
     height: 120px; 
@@ -89,24 +106,12 @@ body {
     background-color: #FF3D9A 
 }
 
-
-
-.Main_Screen {
-    width: 1208px;
-    height: fit-content;
-    padding: 80px 0 120px 0;
-    gap: 40px;
-    margin: 0 auto;
-}
-
-
 .Main_Content {
     max-width: 1208px;
     display: flex;
     margin: 0 auto;
-   
+    padding: 80px 0px 120px 0px;
 }
-
 
 .Main_Content h1 {
     width: 584px;
@@ -158,9 +163,6 @@ h3 {
     margin: 0;
 }
 
-
-
-
 .navbar-item.apply-to-adopt button {
     width: 263px;
     height: 64px;
@@ -190,8 +192,6 @@ h3 {
     color: #1E1F27; 
 }
 
-
-
 .Group_of_Buttons {
     height: 64px; 
     gap: 32px; 
@@ -199,11 +199,12 @@ h3 {
     align-items: center; 
 }
 
-
 .Main_Content {
+    
     display: flex; 
     gap: 40px; 
 }
+
 
 .Info_block {
     flex: 1; 
@@ -215,11 +216,34 @@ h3 {
 
 .Image img {
     width: 100%; 
-    height: 616px; /
+    height: 616px; 
 }
 
-
-
+.custom-modal-enter {
+    animation: slideInRight 0.3s ease forwards;
+  }
+  
+  .custom-modal-exit {
+    animation: slideOutLeft 0.3s ease forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(150%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(150%);
+    }
+  }
 
 .Stats_Block {
     background-color: #1e1f27;
@@ -228,24 +252,16 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 80px;
     padding-right: 152px;
     padding-bottom: 80px;
     padding-left: 152px;
     position: relative;
-
-   
     flex-wrap: wrap;
 }
-
-
 
 .Stats_Block * {
     background-color: #1e1f27;
 }
-
-
-
 
 .Text_Information {
     width: 100%;
@@ -269,7 +285,6 @@ h3 {
     color: #FFFFFF;
 }
 
-
 .Sttats .H {
     width: 376px;
     height: 77px;
@@ -281,7 +296,6 @@ h3 {
     text-align: center;
     color: #F8DB46;
 }
-
 
 .Sttats .Text {
     width: 376px;
@@ -295,86 +309,80 @@ h3 {
     color: white;
 }
 
-
 .Sttats {
     display: flex; 
     justify-content: space-between; 
-
-
-.Animals_Rescued,
-.Raised,
-.Tails_Found_a_Home {
-    flex: 1;
-    text-align: center;
-}}
-
-.prev {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    transform: translateY(-50%);
-    padding: 10px;
-    color: white;
-    left: 0;
-    margin-left: 20px;
 }
 
-.slider {
+.stats_block2{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+ 
 .slide {
-    flex: 0 0 100%;
+    flex: none;
     height: fit-content;
     overflow: hidden;
     position: relative;
+    width: 1300px;
     transition: opacity 0.5s ease-in-out;
-}
-
-.slide img {
-    margin: -5px;
-    width: 15%;
+  }
+  .slider-container {
+    width: 1300px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 400%;
+  }
+  
+  .slide {
+    flex: none;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    width: 1300px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide img {
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     padding: 24px;
     transition: opacity 0.3s ease-in-out;
-}
-
-.slide.hide {
+  }
+  
+  .slide.hide {
     opacity: 0;
     pointer-events: none;
-}
-
-
-.prev {
-    width: 14px;
-    height: 14px;
-    border-radius: 21px;  
+  }
+  
+  .prev {
     position: absolute;
-    top: 77%;
+    top: 45%;
+    transform: translateY(-50%);
     cursor: pointer;
-    transform: translateY(-100%);
-    padding: 10px;
     color: white;
-    left: -10px;
-    margin-left: 14%;
+    left: 0;
     z-index: 1;
-}
-
-
-.next {
-    width: 14px;
-    height: 14px;
-    border-radius: 21px;  
+  }
+  
+  .next {
     position: absolute;
-    top: 77%;
+    top: 45%;
+    transform: translateY(-50%);
     cursor: pointer;
-    transform: translateY(-100%);
-    padding: 10px;
     color: white;
-    right: 20px;
-    margin-right: 17%;
+    right: 0;
     z-index: 1;
-}
+  }
 
 
  /*PAGE 3*/
@@ -1142,23 +1150,20 @@ input[type="text"] {
     color: #FF3D9A;
 }
 
-
-
+/*DONATE MODAL*/
 .Donate_Modal {
     width: 448px;
     height: 686px;
     position: fixed;
-   
     padding: 32px;
     border-radius: 32px;
     background-color: #ffffff; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
     z-index: 1000; 
-    top: 50%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -240px;
 }
-
 
 .form_donate {
     width: 416px;
@@ -1296,8 +1301,9 @@ input[type="money"] {
     height: 60px;
   }
 
-  .layout-button,
-.second-layout-button {
+.layout-button,
+.second-layout-button,
+.third-layout-button {
   border-radius: 8px;
   border: 1px solid var(--blue-light, #3F96FC);
   display: flex;
@@ -1374,7 +1380,7 @@ input[type="money"] {
   }
   
 
- 
+ /*ADOPT MODAL*/
  
 .Adopt_Modal {
     position: fixed;
@@ -1386,6 +1392,10 @@ input[type="money"] {
     background-color: #ffffff; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
     z-index: 1000; 
+    top: 10%;
+    left: 50%;
+    margin-left: -240px;
+    
 }
 
 .Title_adopt h1 {
@@ -1416,6 +1426,7 @@ input[type="money"] {
 
 .main_email_dopt,
 .main_name_dopt p{
+    margin-top: 48px;
     width: 384px;
     gap: 8px;
 }
@@ -1562,7 +1573,7 @@ input[type="text"] {
 }
 
 .checkbox-label{
-    margin-right: 15px;
+    margin-right: 18px;
     align-items: center;
 }
 
@@ -1584,6 +1595,9 @@ input[type="text"] {
     content: "\2713";
     font-size: 14px;
     display: block;
+    margin-left: 25%;
+    margin-top: 10%;
+
 }
 
 .custom-checkbox:checked + .checkbox-span{
