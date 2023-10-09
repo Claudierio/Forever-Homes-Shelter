@@ -20,6 +20,7 @@
                 <img src="components/telefone.png" alt="tel">
                 <a href="#">631-249-7325</a>
             </li>
+
             <li class="navbar-item donate">
                 <button onclick="openModal()">
                     <img src="components/heart.png" alt="heart.png">
@@ -27,11 +28,13 @@
                 </button>
             </li>
 
-            <div class="Donate_Modal" style="display: none;">
-                <div class="Title">
-                    <h1>Choose your Donate </h1>
-                </div>
+            <div id="donate_modal" class="Donate_Modal" style="display: none;">
                 <div class="form_donate">
+
+
+                    <div class="Title">
+                        <h1>Choose your Donate </h1>
+                    </div>
                     <div class="email">
                         <p>EMAIL<span class="blue-text">*</span></p>
                         <div class="Form_email">
@@ -48,31 +51,33 @@
 
                     <div class="email">
                         <p class="email">PAYMENT METHOD<span class="blue-text">*</span></p>
-
                         <div class="button-container">
                             <label class="layout-button">
                                 PIX
-                                <input type="radio" class="circular-radio" name="payment-method"
+                                <input type="radio" class="circular-radio" name="payment-method" id="pixRadio"
                                     onclick="toggleStyle(this)" />
                             </label>
                             <label class="second-layout-button">
                                 Credit<br />Card
-                                <input type="radio" class="circular-radio" name="payment-method"
+                                <input type="radio" class="circular-radio" name="payment-method" id="creditCardRadio"
                                     onclick="toggleStyle(this)" />
                             </label>
-                            <label class="layout-button">
+                            <label class="third-layout-button">
                                 PayPal
-                                <input type="radio" class="circular-radio" name="payment-method"
+                                <input type="radio" class="circular-radio" name="payment-method" id="paypalRadio"
                                     onclick="toggleStyle(this)" />
                             </label>
+                            <script src="js/donate_buttons.js"></script>
                         </div>
 
+
                         <div class="donate-wrap-button">
-                            <button class="button-heart-wanna">
+                            <button class="button-heart-wanna" id="I_wanna_help">
                                 <img src="components/heart.png" width="25" height="23" />
                                 I wanna Help!
                             </button>
                         </div>
+                        <script src="js/sucess.js"></script>
                         <div class="donate-wrap-button">
                             <button class="button-cancel" onclick="closeModal()">
                                 <img src="components/vector.png" width="12" height="22" />
@@ -85,7 +90,7 @@
             <script src="js/donate_modal.js"></script>
         </ul>
 
-        <div class="Adopt_Modal" style="display: none;">
+        <div id="adopt_modal" class="Adopt_Modal" style="display: none;">
             <div class="Title_adopt">
                 <h1>Apply to Adopt</h1>
                 <div class="SubTitle_adopt">
@@ -140,6 +145,7 @@
                         <img src="components/dog_button.png" alt="vector.png">
                         I wanna Adopt!
                     </button>
+                    <script src="js/sucess.js"></script>
 
                     <button id="Cancel-button_adopt" onclick="closeAdoptModal() ">
                         <img src="components/vector.png" alt="vector.png">
@@ -149,6 +155,7 @@
             </div>
         </div>
         <script src="js/adopt_modal.js"></script>
+
     </nav>
 </head>
 
