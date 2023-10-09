@@ -1,27 +1,29 @@
-@media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
+@media (max-width: 767px) {
+    .body-row,
+    .Content_Block,
+    .text-block {
+      flex-direction: column;
+      padding-left: 1%;
     }
-    .navbar-item {
-        margin-bottom: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .Content_Block img {
+      width: 100%;
+      height: 100%;
     }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-}
-
-@media (min-width: 1025px) {
-}
-
-
+  }
 
 body {
     font-family: "Poppins", sans-serif; 
+    padding: 0;
+    padding: 0;
+    width: 100%;
+
 }
+
 .navbar {
-    width: 1208px; 
+    width: 1208px;
     height: 120px; 
     display: flex;
     justify-content: space-between;
@@ -106,20 +108,21 @@ body {
     background-color: #FF3D9A 
 }
 
+/*PAGE 1*/
+
 .Main_Content {
     max-width: 1208px;
     display: flex;
     margin: 0 auto;
     padding: 80px 0px 120px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 1208px;
 }
 
 .Main_Content h1 {
-    width: 584px;
-    height: 154px;
     font-family: "Poppins", sans-serif;
     font-size: 64px;
-    font-weight: 700;
-    line-height: 77px;
     letter-spacing: -0.02em;
     text-align: left;
     margin: 0;
@@ -127,8 +130,6 @@ body {
 
 
 .Info_block p {
-    width: 584px;
-    height: 190px;
     font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -136,36 +137,24 @@ body {
     letter-spacing: 0px;
     text-align: left;
     margin: 0;
-}
-
-
-.CTA_Block {
-    width: 584px;
-    height: auto;
-    gap: 24px;
-
+    margin-top: 5%;
 }
 
 .subtitle{
-    padding-bottom: 20px;
+    margin-top: 8%;
+    padding-bottom: 6%;
 }
 
 
 h3 {
-    width: 584px;
-    height: 51px;
     font-family: "Poppins", sans-serif;
     font-size: 32px;
-    font-weight: 700;
-    line-height: 51px;
     letter-spacing: -0.02em;
     text-align: left;
     margin: 0;
 }
 
 .navbar-item.apply-to-adopt button {
-    width: 263px;
-    height: 64px;
     padding: 16px 32px;
     border-radius: 32px;
     border: 2px solid #1E1F27;
@@ -193,16 +182,18 @@ h3 {
 }
 
 .Group_of_Buttons {
-    height: 64px; 
-    gap: 32px; 
+    gap: 6%; 
     display: flex; 
     align-items: center; 
 }
 
 .Main_Content {
-    
-    display: flex; 
-    gap: 40px; 
+    gap: 3%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1208px;
+
 }
 
 
@@ -245,6 +236,8 @@ h3 {
     }
   }
 
+  /*PAGE 2*/
+
 .Stats_Block {
     background-color: #1e1f27;
     margin: 0 auto;
@@ -264,7 +257,6 @@ h3 {
 }
 
 .Text_Information {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,20 +266,16 @@ h3 {
 
 
 .Text_Information h2 {
-    width: 100%;
-    height: 134px;
     font-family: 'Poppins', sans-serif;
     font-size: 56px;
     font-weight: 700;
-    line-height: 67px;
+    line-height: 125%;
     letter-spacing: -0.02em;
     text-align: center;
     color: #FFFFFF;
 }
 
 .Sttats .H {
-    width: 376px;
-    height: 77px;
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
     font-weight: 700;
@@ -299,7 +287,7 @@ h3 {
 
 .Sttats .Text {
     width: 376px;
-    height: 51px;
+    height: 40px;
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -318,7 +306,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
  
@@ -327,62 +314,62 @@ h3 {
     height: fit-content;
     overflow: hidden;
     position: relative;
-    width: 1300px;
     transition: opacity 0.5s ease-in-out;
   }
-  .slider-container {
-    width: 1300px;
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    width: 400%;
-  }
-  
-  .slide {
-    flex: none;
-    height: fit-content;
-    overflow: hidden;
-    position: relative;
-    width: 1300px;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .slide img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    padding: 24px;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .slide.hide {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .prev {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: white;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .next {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: white;
-    right: 0;
-    z-index: 1;
-  }
+
+.slider-container {
+width: 1300px;
+max-width: 100%;
+position: relative;
+overflow: hidden;
+}
+
+.slider {
+display: flex;
+width: 400%;
+}
+
+.slide {
+flex: none;
+height: fit-content;
+overflow: hidden;
+position: relative;
+width: 1300px;
+transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+width: 250px;
+height: 250px;
+object-fit: cover;
+padding: 24px;
+transition: opacity 0.3s ease-in-out;
+}
+
+.slide.hide {
+opacity: 0;
+pointer-events: none;
+}
+
+.prev {
+position: absolute;
+top: 45%;
+transform: translateY(-50%);
+cursor: pointer;
+color: white;
+left: 0;
+z-index: 1;
+}
+
+.next {
+position: absolute;
+top: 45%;
+transform: translateY(-50%);
+cursor: pointer;
+color: white;
+right: 0;
+z-index: 1;
+}
 
 
  /*PAGE 3*/
@@ -391,13 +378,16 @@ h3 {
     width: 100%;
     height: auto;
     padding: 80px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .Main_page3 {
     width: 100%;
     height: auto;
-    gap: 80px;
+    gap: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -405,11 +395,7 @@ h3 {
     margin: 0 auto;
 }
 
-
-
 .h2 h1 {
-    width: 1208px;
-    height: 67px;
     font-family: "Poppins", sans-serif;
     font-size: 56px;
     font-weight: 700;
@@ -428,22 +414,19 @@ h3 {
     width: 1208px;
     height: 355px;
     display: flex;
-    gap: 40px;
+    gap: 3.5%;
     justify-content: space-between;
 }
 
 
 .Row_2 {
-    margin-top: 80px;
+    margin-top: 5%;
 }
-
 
 
 .Shelter,
 .Vetting,
 .Facilities {
-    width: 376px;
-    height: auto;
     padding: 36px;
     border-radius: 24px;
     border: 2px solid #FFFFFF;
@@ -497,11 +480,9 @@ h3 {
 }
 
 
-
 .Text_Bloc {
     width: 304px;
     height: auto;
-
     gap: 16px;
 }
 
@@ -522,8 +503,6 @@ h3 {
 .Row_2 .Transport,
 .Row_2 .Fosters,
 .Row_2 .Food {
-    width: 376px;
-    height: auto;
     padding: 36px;
     border-radius: 24px;
     border: 2px solid #FFFFFF;
@@ -536,12 +515,14 @@ h3 {
 
 .Adopt_Info_Black {
     width: 100%;
-    height: auto; 
-    padding: 40px 0 120px 0; 
-}
-
-.Adoption_Main {
-    width: 100%;
+    padding: 40px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Adoption_Main {
+    width: 1208px;
     height: auto;
     gap: 40px;
     display: flex;
@@ -549,56 +530,56 @@ h3 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-}
-
-
-.Text h1 {
-    font-family: "Poppins", sans-serif; 
-    font-size: 56px; 
-    font-weight: 700; 
-    line-height: 67px; 
-    letter-spacing: -0.02em; 
-    text-align: center; 
-
-}
-
-.Content_Block {
+  }
+  
+  .Text h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+  
+  .Content_Block {
     display: flex;
-    gap: 32px;
-}
-
-.Text_Block {
-    width: 660px;
+    gap: 3%;
+  
+    justify-content: center;
+  }
+  
+  .Text_Block {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
     height: 616px;
     gap: 32px;
-    flex-direction: column; 
-    align-items: center; 
-    
-}
-
-.ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ul {
     font-family: "Inter";
     font-size: 24px;
     text-align: left;
     margin-bottom: 16px;
-}
-
-.ul ul {
+  }
+  
+  .ul ul {
     list-style-type: disc;
     margin-left: 20px;
-}
-
-.ul ul li {
+  }
+  
+  .ul ul li {
     margin-bottom: 16px;
-}
-
-.Button {
+  }
+  
+  .Button {
     align-self: flex-start;
     margin-top: 40px;
     margin-left: 10%;
-}
-
-.Button button {
+  }
+  
+  .Button button {
     background-color: black;
     border: none;
     width: fit-content;
@@ -612,11 +593,9 @@ h3 {
     align-items: center;
     gap: 50px;
     cursor: pointer;
-}
-
-
-
-.apply_to_adopt_black {
+  }
+  
+  .apply_to_adopt_black {
     font-family: "Poppins";
     font-size: 20px;
     font-weight: 700;
@@ -635,7 +614,7 @@ h3 {
     margin-left: 40px;
     border-color: #1e1f27;
     align-self: flex;
-}
+  }
 
 /*PAG 5*/
 
@@ -655,11 +634,10 @@ h3 {
 
 .Difference_Block_Main {
     width: 1008px;
-    gap: 50px;
+    gap: 10%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 100px;
 }
 
 .Difference_Block_h1 {
@@ -669,7 +647,6 @@ h3 {
     margin: 0 auto;
     color: white;
     
-
 }
 
 .Difference_Block_h1 h1 {
@@ -685,7 +662,6 @@ h3 {
 .diferrence_cards{
     display: flex;
     justify-content: space-between;
-   
     padding-bottom: 30px;
     margin-top: 40px;
 }
@@ -811,8 +787,9 @@ h3 {
 
 .Text_Block_adopt{
     width: 1208px;
-    gap: 50px;
+    gap: 10%;
     margin: 0 auto;
+    justify-content: center;
     align-items: center;
 }
 
@@ -820,7 +797,6 @@ h3 {
 .Text_h2 {
     width: 1,208px;
     height: 67px;
-    gap: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -858,7 +834,7 @@ h3 {
 .Buttom_Group {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 7%;
 }
 
 
@@ -922,16 +898,17 @@ h3 {
     padding: 40px 0 120px 0;
     background: #5758F1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .subscription_main {
-    width: Fixed (1,208px); 
+    width: 1,208px; 
     margin: 0 auto;
 }
 
 .subscription_main h2 {
-    width: 1208px;
-    height: 67px;
     font-family: "Poppins", sans-serif;
     font-size: 56px;
     font-weight: 700;
@@ -942,8 +919,6 @@ h3 {
 }
 
 .subscription_main p {
-    width: 1208px;
-    height: 68px;
     font-family: "Inter";
     font-size: 20px;
     font-weight: 500;
@@ -954,7 +929,7 @@ h3 {
 }
 
 .subscription_main .header {
-    margin-bottom: 60px;
+    margin-bottom: 8%;
 }
 
 .Form{
@@ -998,8 +973,6 @@ input[type="text"] {
     color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 .Buttons button {
     width: 170px;
     height: 64px;
@@ -1027,18 +1000,18 @@ input[type="text"] {
 /*FOOTER*/
 .footer_text_end{
     width: 100%;
-   
     display: flex;
     
 }
 
 .Main_Footer{
-    width: 1208%; 
+    width: 1208px; 
     height: 443px;
     display: flex;   
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
 }
 
 .Links_Block {
