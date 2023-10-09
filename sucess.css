@@ -2,6 +2,14 @@ body {
     font-family: "Poppins", sans-serif; 
 }
 
+@media screen and (max-width: 767px) {
+    .body {
+        width: 100%;
+        flex-direction: column;
+
+    }
+}
+
 /* Estilize a barra de navegação */
 
 .navbar {
@@ -350,35 +358,46 @@ input[type="money"] {
 
 
 /*SUCESS PAG*/
-
 .main_screen {
-    padding: 80px 120px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex: 1 0 0;
-    align-self: stretch;
-    background-color: #1e1f27;
-    height: 422px;
-
+    width: 100%;
+    background: #1E1F27;
 }
 
+
 .main_content {
+    width: 100vw;
     display: flex;
     align-items: flex-start;
     gap: 40px;
     flex: 1 0 0;
 }
 
-.info_block {
+@media screen and (max-width: 767px) {
+    .main_content {
+        width: 100%;
+        height: 100%;
+      flex-direction: column;
     
+    }
+  }
+
+.info_block {
     display: flex;
     width: 1208px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
     margin: 0 auto;
+    justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+    .info_block {
+        width: 100%;
+      flex-direction: column;
+    }
+  }
+
 
 .buttons {
     display: flex;
@@ -417,7 +436,7 @@ input[type="money"] {
     color: var(--black, #ffffff);
     font-feature-settings: 'ss06' on, 'ss05' on, 'ss04' on, 'ss03' on, 'ss02' on;
     font-family: Poppins;
-    font-size: 44px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -429,6 +448,18 @@ input[type="money"] {
     transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
 }
 
+@media screen and (max-width: 767px) {
+    .text_block {
+    width: 100%;
+      flex-direction: column;
+      text-align: left; /* Center the text horizontally */
+      position: fixed; /* Position the element absolutely */
+      top: 7%; /* Move it down by 50% of its own height */
+      left: 1%; /* Move it right by 50% of its own width */
+      transform: translate(0%, 0%); /* Center it both horizontally and vertically */
+      
+    }
+  }
 
 .content_block_sucess {
     width: 1208px;
@@ -469,33 +500,59 @@ input[type="money"] {
     color: #F8DB46;
 }
 
-.adopt_block_main{
-    margin-top: 90px;
-    width: 1208px; 
-    display: flex;   
-    justify-content: left;
+.adopt_block_main {
+    width: 1308px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
-
+    margin-top: 21%;
 }
 
-.Text_Block_adopt{
-    width: 2208px;
-    gap: 50px;
+@media screen and (max-width: 767px) {
+    .adopt_block_main {
+        width: 100%;
+      flex-direction: column;
+    
+    }
+  }
+
+
+.Text_Block_adopt {
+    width: 1208px;
+    gap: 10%;
     margin: 0 auto;
+    justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 767px) {
+    .Text_Block_adopt {
+        width: 100%;
+      flex-direction: column;
+    
+    }
+  }
 
 
 .Text_h2 {
-    width: 1,208px;
+    width: 1, 208px;
     height: 67px;
-    gap: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
+
+@media screen and (max-width: 767px) {
+    .Text_h2 {
+        width: 100%;
+      flex-direction: column;
+      height: 110px;
+      margin-top: 25%;
+    
+    }
+  }
 
 
 .Text_h2 h1 {
@@ -507,7 +564,7 @@ input[type="money"] {
     text-align: center;
 }
 
-.yellow-text{
+.yellow-text {
     color: #F8DB46;
 }
 
@@ -528,19 +585,44 @@ input[type="money"] {
 .Buttom_Group {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 7%;
 }
 
+@media screen and (max-width: 767px) {
+    .Buttom_Group {
+        width: 100%;
+      flex-direction: column;
+      align-items: center;    
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .Apply_to_Adopt_Button {
+        padding-top: 20px;
+        margin-left: -20px;
+    }
+  }
 
 .Cat_img img {
     width: 300px;
     height: 400px;
 }
 
+
 .Dog_img img {
     width: 300px;
     height: 400px;
 }
+
+@media screen and (max-width: 767px) {
+    .Dog_img {
+        width: 100%;
+      flex-direction: column;
+      margin-top: 30%;
+      margin-left: 20%;
+    
+    }
+  }
 
 .view_Adoptables_Button button {
     width: 238px;
@@ -559,6 +641,7 @@ input[type="money"] {
     cursor: pointer;
     margin-right: 20px;
 }
+
 
 .view_Adoptables_Button button:hover {
     border-color: black;
