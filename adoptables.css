@@ -1,3 +1,14 @@
+@media (max-width: 767px) {
+    .Carousel_line1,
+    .Carousel_line2 {
+      flex-direction: column;
+      margin-top: 30%;
+      margin-left: 17%;
+
+
+    }
+  }
+
 body {
     font-family: "Poppins", sans-serif; 
 }
@@ -5,23 +16,47 @@ body {
 /*Adoptables*/
 .navbar {
     width: 1208px;
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 100%;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
     margin: 0 auto;
-    border-bottom: 3px solid black;
+    background-color: #ffff;
+
 }
 
+@media screen and (max-width: 767px) {
+    .navbar-list {
+        width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     
+    }
 
-/* Estilize a lista de itens de navegação */
+    .navbar-item {
+        display: block;
+        padding: 5px 0;
+
+      }
+  }
+
 .navbar-list {
+    float: left;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
+
+.navbar-list ul li {
+    display: inline-block;
+    list-style: none;
+    padding-top: 28px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+  }
 
 
 .navbar-item {
@@ -89,7 +124,7 @@ body {
 
 
 .navbar-item.donate button {
-    background-color: #FF3D9A 
+    background-color: #FF3D9A
 }
 
 /* DONATE_MODAL*/
@@ -323,9 +358,6 @@ input[type="money"] {
     height: 22px;
   }
 
-
-
-
 .adoptables{
     background-color: #1e1f27;
     margin: 0 auto;
@@ -340,7 +372,8 @@ input[type="money"] {
 }
 
 .Adoptables_Main{
-    width: Fixed (1,208px);
+    width: 1208px;
+    max-width: 100%;
     height: 1,129px;
     gap: 80px;
 }
@@ -458,131 +491,154 @@ input[type="money"] {
     margin-right: 8px; 
 }
 
+/*DIVIDER*/
 
-.footer_text_end{
-    width: 100%;
-   
-    display: flex;
-    
-}
-
-.Main_Footer{
-    width: 1208%; 
-    height: 443px;
-    display: flex;   
+.divider {
+    width: 1208px;
+    max-width: 90%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    border: 2px solid black;
+    clear: both;
+  }
+
+/*FOOTER*/
+
+@media screen and (max-width: 767px) {
+  .image_footer {
+    width: 100%;
+    margin-left: 10%;
+  }
 }
 
-.Links_Block {
-    width: 1208px; 
-    justify-content: space-between;
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 3px solid black;
-    margin-top: -20px;
+@media screen and (max-width: 767px) {
+  .address,
+  .phone,
+  .mail,
+  .socials {
+    width: 100%;
+    margin-left: 13%;
+  }
 }
 
-.logo_nav img{
-    width: 272px;
-    height: 272px;
-    gap: 19px;
+
+.links-row {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .links-row ul li {
+    display: inline-block;
+  
+    display: block;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .info-contacts ul li {
+    display: inline-block;
+  }
+  
+  .address,
+  .phone,
+  .mail {
     display: flex;
     align-items: center;
-    margin-top: 30px;
-}
-
-.Links_Row_1 p, .Links_Row_2 p {
-    font-family: Inter, sans-serif;
+    margin-right: 20px;
+  }
+  
+  .address img,
+  .phone img,
+  .mail img {
+    margin-right: 10px;
+  }
+  
+  .address img {
+    padding-top: 25px;
+  }
+  
+  .address {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .address-text ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .address-text ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Main_footer {
+    font-family: "Inter";
     font-size: 20px;
     font-weight: 700;
+    width: 1208px;
+    max-width: 90%;
     line-height: 32px;
+    background-color: #ffff;
+    height: 120px;
     letter-spacing: 0px;
     text-align: left;
-}
-
-.contacts {
-    width: 272px;
-    height: 232px;
-    gap: 24px;
-}
-
-.Address,
-.Phone, 
-.Mail{
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .Main_footer footer {
     display: flex;
-}
-
-.Info p{
-    font-family: Inter, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: left; 
-    margin-top: 30px;
-}
-
-.Sub_Address p {
-    line-height: 5px;
-}
-
-.Address img {
-    width: 14px;
-    height: 20px;
-    position: relative;
-    top: 20px;
-    margin-right: 10px;
-}
-
-.Phone img {
-    width: 18px;
-    height: 18px;
-    position: relative;
-    top: 36px;
-    margin-right: 10px;
-}
-
-.Mail img {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 35px;
-    margin-right: 10px;
-}
-
-.Socials img{
-    width: 32px;
-    height: 32px;
-    padding: 2px;
-}
-
-.Text_end{
-    font-family: Poppins;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+  
+  .final-footer {
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  
+  .text-box-footer {
+    font-family: "Poppins";
     font-size: 32px;
     font-weight: 700;
     line-height: 51px;
     letter-spacing: -0.02em;
     text-align: center;
-
-}
-
-.Text_end {
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 51px;
+  }
+  
+  .layout-button,
+  .second-layout-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
     letter-spacing: -0.02em;
-    text-align: center;
-}
+    text-align: left;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #3f96fc;
+    margin-bottom: 16px;
+    width: 200px;
+    position: relative;
+  }
+  
+  .layout-button {
+    width: 133.33px;
+    height: 30px;
+  }
+  
+  .second-layout-button {
+    width: 133.33px;
+    height: 60px;
+  }
 
-.part1 {
-    color: #1E1F27;
-}
-
-.part2 {
-    color: #FF3D9A;
-}
+/*DONATE MODAL*/
 
 .Donate_Modal {
     width: 448px;
