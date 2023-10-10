@@ -1,7 +1,8 @@
-const slider = document.querySelector(".slider");
+const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".slide");
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
+const dots = document.querySelectorAll(".dot");
 let currentIndex = 0;
 
 prevButton.addEventListener("click", () => {
@@ -11,6 +12,15 @@ prevButton.addEventListener("click", () => {
         currentIndex = slides.length - 1;
     }
     updateSlider();
+    updateDots();
+});
+
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateSlider();
+        updateDots();
+    });
 });
 
 nextButton.addEventListener("click", () => {
@@ -20,6 +30,7 @@ nextButton.addEventListener("click", () => {
         currentIndex = 0;
     }
     updateSlider();
+    updateDots();
 });
 
 let isDragging = false;
@@ -33,7 +44,7 @@ slides.forEach((slide, index) => {
         startPosition = e.clientX - currentTranslate;
         prevTranslate = currentTranslate;
 
-        slider.style.transition = "none";
+        carousel.style.transition = "none";
         slide.style.cursor = "grabbing";
     });
 
@@ -43,7 +54,7 @@ slides.forEach((slide, index) => {
         const currentPosition = e.clientX - startPosition;
         currentTranslate = currentPosition;
 
-        slider.style.transform = `translateX(${-currentIndex * slides[0].offsetWidth}px)`;
+        carousel.style.transform = `translateX(${-currentIndex * slides[0].offsetWidth}px)`;
     });
 
     slide.addEventListener("mouseup", () => {
@@ -59,7 +70,7 @@ slides.forEach((slide, index) => {
             }
         }
 
-        slider.style.transition = "none";
+        carousel.style.transition = "none";
         updateSlider();
     });
 
@@ -67,7 +78,7 @@ slides.forEach((slide, index) => {
         isDragging = false;
         slide.style.cursor = "grab";
 
-        slider.style.transition = "none";
+        carousel.style.transition = "none";
         updateSlider();
     });
 });
@@ -81,5 +92,15 @@ function updateSlider() {
         }
     });
 
-    slider.style.transform = `translateX(${-currentIndex * slides[0].offsetWidth}px)`;
+    carousel.style.transform = `translateX(${-currentIndex * slides[0].offsetWidth}px)`;
+}
+
+function updateDots() {
+    dots.forEach((dot, index) => {
+        if (index === currentIndex) {
+            dot.classList.add("active");
+        } else {
+            dot.classList.remove("active");
+        }
+    });
 }
